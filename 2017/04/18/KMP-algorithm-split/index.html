@@ -32,7 +32,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -66,9 +66,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.png?v=5.1.0" />
 
 
 
@@ -90,27 +90,27 @@
 <meta name="description" content="Splitting a string per the given seperator/delimiter similar to split() funtion in Python.Implement with Knuth–Morris–Pratt string searching algorithm (or KMP algorithm) in C++ language.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Algorithm] Implement Split Function with KMP Algorithm">
-<meta property="og:url" content="http://yoursite.com/2017/04/18/KMP-algorithm-split/index.html">
+<meta property="og:url" content="https://hypjudy.github.io/blog/2017/04/18/KMP-algorithm-split/index.html">
 <meta property="og:site_name" content="HYPJUDY">
 <meta property="og:description" content="Splitting a string per the given seperator/delimiter similar to split() funtion in Python.Implement with Knuth–Morris–Pratt string searching algorithm (or KMP algorithm) in C++ language.">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/split-1.png">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/split-2.png">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/split-3.png">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/split-4.png">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/partial-match-table.png">
-<meta property="og:image" content="http://yoursite.com/images/algorithm/counterexample-trick.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/split-1.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/split-2.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/split-3.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/split-4.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/partial-match-table.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/algorithm/counterexample-trick.png">
 <meta property="og:updated_time" content="2017-04-18T21:10:16.091Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Algorithm] Implement Split Function with KMP Algorithm">
 <meta name="twitter:description" content="Splitting a string per the given seperator/delimiter similar to split() funtion in Python.Implement with Knuth–Morris–Pratt string searching algorithm (or KMP algorithm) in C++ language.">
-<meta name="twitter:image" content="http://yoursite.com/images/algorithm/split-1.png">
+<meta name="twitter:image" content="https://hypjudy.github.io/blog/images/algorithm/split-1.png">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/blog/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
@@ -131,7 +131,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/18/KMP-algorithm-split/"/>
+  <link rel="canonical" href="https://hypjudy.github.io/blog/2017/04/18/KMP-algorithm-split/"/>
 
 
 
@@ -180,7 +180,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">HYPJUDY</span>
         <span class="logo-line-after"><i></i></span>
@@ -208,7 +208,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/blog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -218,7 +218,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/blog/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/18/KMP-algorithm-split/">
+    <link itemprop="mainEntityOfPage" href="https://hypjudy.github.io/blog/2017/04/18/KMP-algorithm-split/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HYPJUDY">
@@ -310,7 +310,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/18/KMP-algorithm-split/#comments" itemprop="discussionUrl">
+                <a href="/blog/2017/04/18/KMP-algorithm-split/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/04/18/KMP-algorithm-split/" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -346,11 +346,11 @@
 <h2 id="Naive-Pattern-Searching"><a href="#Naive-Pattern-Searching" class="headerlink" title="Naive Pattern Searching"></a>Naive Pattern Searching</h2><p>Well, my first thought was sliding the delimiter over string one by one for a match:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; split(<span class="keyword">const</span> <span class="built_in">string</span> &amp;s, <span class="keyword">const</span> <span class="built_in">string</span> &amp;sep) &#123;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">    <span class="keyword">int</span> last = <span class="number">0</span>, i = <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> m = s.length(), n = sep.length();</div><div class="line">    <span class="keyword">while</span>(i &lt; m) &#123;</div><div class="line">        <span class="keyword">int</span> find_sep = <span class="number">0</span>;</div><div class="line">        <span class="keyword">if</span> (s[i] == sep[<span class="number">0</span>] &amp;&amp; i + n &lt;= m) &#123;</div><div class="line">            <span class="keyword">if</span> (s.substr(i, n) == sep) &#123;</div><div class="line">                res.push_back(s.substr(last, i-last));</div><div class="line">                last = i + n;</div><div class="line">                i += n;</div><div class="line">                find_sep = <span class="number">1</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (find_sep == <span class="number">0</span>) ++i;</div><div class="line">    &#125;</div><div class="line">    res.push_back(s.substr(last, i - last));</div><div class="line">    <span class="keyword">return</span> res;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Notice: this function doesn’t split string by space in default. For example, <code>split(&quot;a b c&quot;, &quot;&quot;) = &quot;a b c&quot;</code>, which I think is also resonable.</p>
-<p><em>Please read image from top to bottom, left to right.</em><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/images/algorithm/split-1.png" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/images/algorithm/split-2.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<p><em>Please read image from top to bottom, left to right.</em><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/blog/images/algorithm/split-1.png" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/blog/images/algorithm/split-2.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
 <p><strong>Best case:</strong> First character of the delimiter is not present in string.<br><code>split(&quot;AAAAAA&quot;, &quot;BC&quot;)</code><br><em>Time complexity:</em> O(m), m is string’s length.<br><strong>Worst case:</strong> Only last character of the delimiter is different.<br><code>split(&quot;AAAAAA&quot;, &quot;AAB&quot;)</code><br><em>Time complexity:</em> O((m-n+1)n), m is string’s length and n is delimiter’s length.</p>
 <h2 id="Knuth–Morris–Pratt-KMP-string-searching-algorithm"><a href="#Knuth–Morris–Pratt-KMP-string-searching-algorithm" class="headerlink" title="Knuth–Morris–Pratt(KMP) string searching algorithm"></a>Knuth–Morris–Pratt(KMP) string searching algorithm</h2><p><em>Time complexity:</em> O(m+n) in worst case, m is string’s length and n is delimiter’s length. </p>
 <p>In fact, we can directly jump to a potential position if the previous matched substring has same prefix and suffix. That is to say, we can make use of previous info and skip comparing some partial matched substring.</p>
-<p><em>Please read image from top to bottom, left to right.</em><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/images/algorithm/split-3.png" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/images/algorithm/split-4.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<p><em>Please read image from top to bottom, left to right.</em><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/blog/images/algorithm/split-3.png" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/blog/images/algorithm/split-4.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
 <p>See also: this post(<a href="http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html" target="_blank" rel="external">字符串匹配的KMP算法</a>) provides explict diagrams too.</p>
 <p>Then the only problem is how many steps we should jump? We should jump to the longest matched suffix:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">ABCDAB ABCDABCDABDE <span class="comment">// " " mismatch</span></div><div class="line">ABCDABD</div><div class="line">=&gt; <span class="comment">// "AB" matched in substring "ABCDAB", jump four steps</span></div><div class="line">ABCDAB ABCDABCDABDE <span class="comment">// " " mismatch</span></div><div class="line">    ABCDABD       </div><div class="line">=&gt; <span class="comment">// no match in substring "AB", forward one step</span></div><div class="line">ABCDAB ABCDABCDABDE <span class="comment">// "B" mismatched</span></div><div class="line">     ABCDABD     </div><div class="line">=&gt; <span class="comment">// ......</span></div><div class="line">ABCDAB ABCDABCDABDE <span class="comment">// "D" mismatched</span></div><div class="line">       ABCDABD     </div><div class="line">=&gt; <span class="comment">// "AB" matched in substring "ABCDAB", jump four steps</span></div><div class="line">ABCDAB ABCDABCDABDE <span class="comment">// matched!</span></div><div class="line">           ABCDABD</div></pre></td></tr></table></figure>
@@ -358,9 +358,9 @@
 <p>For example, for delimiter <code>AABCAABA</code>, consider substring:<br><code>AA</code>: one character <code>A</code> matched<br><code>AAB</code>: zero character matched<br><code>AABC</code>: zero character matched<br><code>AABCA</code>: one character <code>A</code> matched<br><code>AABCAA</code>: two character <code>AA</code> matched<br><code>AABCAAB</code>: three character <code>AAB</code> matched<br><code>AABCAABA</code>: one character <code>A</code> matched</p>
 <p>I recommend read codes by calculating the above example first.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Return a table indicates the length of partial</span></div><div class="line">*  matched string for each substring */</div><div class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; partial_match_table(<span class="built_in">string</span> delimiter) &#123;</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">    res.push_back(<span class="number">0</span>);</div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">1</span>; <span class="comment">// iterate over delimiter, the end of prefix</span></div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> len = <span class="number">0</span>; <span class="comment">// the end of suffix, the length of matched substr</span></div><div class="line">    <span class="keyword">while</span> (i &lt; delimiter.size()) &#123;</div><div class="line">        <span class="keyword">if</span> (delimiter[i] == delimiter[len]) &#123;</div><div class="line">            ++len;</div><div class="line">            res.push_back(len);</div><div class="line">            ++i;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">if</span>(len) len = res[len - <span class="number">1</span>]; <span class="comment">// trick</span></div><div class="line">            <span class="keyword">else</span> &#123;</div><div class="line">                ++i;</div><div class="line">                res.push_back(<span class="number">0</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> res;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Here’s my draft(L indicate <code>len</code> in code):<br><img src="/images/algorithm/partial-match-table.png" title="Partial match table calculate process" style="width: 30%; margin: auto;"></p>
+<p>Here’s my draft(L indicate <code>len</code> in code):<br><img src="/blog/images/algorithm/partial-match-table.png" title="Partial match table calculate process" style="width: 30%; margin: auto;"></p>
 <p>Matched prefix is the substring of [0, L] and suffix is the substring of [i-L, i]. They will become longer when matching (<code>delimiter[i] == delimiter[len]</code>), in which case <code>i</code> and <code>L</code> step forward simultaneously. If mismatch, <code>L</code> will step backward for a shorter potential matched string.<br>Their’s a trick when strings mismatch and <code>L</code> is not at the begining, we set <code>len = res[len - 1]</code>. Try to understand this trick by counterexample. </p>
-<p><img src="/images/algorithm/counterexample-trick.png" title="Partial match table calculate process" style="width: 70%; margin: auto;"></p>
+<p><img src="/blog/images/algorithm/counterexample-trick.png" title="Partial match table calculate process" style="width: 70%; margin: auto;"></p>
 <p>From the above codes, we can see their’s only one loop for each function, that’s why KMP has linear time complexity in worst case.</p>
 <h1 id="Split"><a href="#Split" class="headerlink" title="Split"></a>Split</h1><p>We can find the split function definition in <a href="https://docs.python.org/2/library/stdtypes.html" target="_blank" rel="external">Python Standard Library</a></p>
 <blockquote>
@@ -397,7 +397,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/14/caffe-dnnh/" rel="next" title="[Caffe] Similarity-Based Deep Neural Network Hashing">
+              <a href="/blog/2017/04/14/caffe-dnnh/" rel="next" title="[Caffe] Similarity-Based Deep Neural Network Hashing">
                 <i class="fa fa-chevron-left"></i> [Caffe] Similarity-Based Deep Neural Network Hashing
               </a>
             
@@ -407,7 +407,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/25/image-morphing/" rel="prev" title="[CVPR] Image Morphing">
+              <a href="/blog/2017/04/25/image-morphing/" rel="prev" title="[CVPR] Image Morphing">
                 [CVPR] Image Morphing <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -476,7 +476,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/blog/images/avatar.png"
                alt="HYPJUDY" />
           <p class="site-author-name" itemprop="name">HYPJUDY</p>
            
@@ -487,7 +487,7 @@
         
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
+              <a href="/blog/archives">
                 <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -618,46 +618,46 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 

@@ -32,7 +32,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -66,9 +66,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.png?v=5.1.0" />
 
 
 
@@ -90,66 +90,66 @@
 <meta name="description" content="从拍摄的手写体数字串纸张照片到自动识别数字，本文从手写体数字分割、训练分类器和结果比较三方面结合过程图及代码解读手写体数字识别方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[CVPR] 手写体数字识别">
-<meta property="og:url" content="http://yoursite.com/2017/07/10/handwritten-digits-recognition/index.html">
+<meta property="og:url" content="https://hypjudy.github.io/blog/2017/07/10/handwritten-digits-recognition/index.html">
 <meta property="og:site_name" content="HYPJUDY">
 <meta property="og:description" content="从拍摄的手写体数字串纸张照片到自动识别数字，本文从手写体数字分割、训练分类器和结果比较三方面结合过程图及代码解读手写体数字识别方法。">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7.jpg">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_threshold_140.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_dilate_cross.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_res_acc.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/0_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/1_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/2_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/3_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/4_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/5_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/6_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4.bmp">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/blank.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/1_A4_cropped.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/1_A4_threshold_140.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/1_A4_threshold_120.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_dilate_ellip_10iter.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_dilate_ellip_20iter.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_dilate_cross.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre_10iter.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre_20iter.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre_small_rec.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre_no_ellip.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre_small_rec.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/2_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/3_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/4_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/resize_sample_ori.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/resize_sample_f.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/resize_sample_t.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/MNIST_samples.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/sphx_glr_plot_iris_0012.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/5_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/6_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/7_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/digits567.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/1_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/3_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/4_A4_thre.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/digits1.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/digits3.png">
-<meta property="og:image" content="http://yoursite.com/images/handwritten-digits-recognition/digits4.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_threshold_140.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_dilate_cross.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_res_acc.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/0_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/1_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/2_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/3_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/4_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/5_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/6_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/blank.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/1_A4_cropped.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/1_A4_threshold_140.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/1_A4_threshold_120.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_dilate_ellip_10iter.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_dilate_ellip_20iter.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_dilate_cross.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre_10iter.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre_20iter.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre_small_rec.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre_no_ellip.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre_small_rec.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/2_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/3_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/4_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/resize_sample_ori.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/resize_sample_f.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/resize_sample_t.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/MNIST_samples.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/sphx_glr_plot_iris_0012.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/5_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/6_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/digits567.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/1_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/3_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/4_A4_thre.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/digits1.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/digits3.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/digits4.png">
 <meta property="og:updated_time" content="2017-10-14T10:19:17.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[CVPR] 手写体数字识别">
 <meta name="twitter:description" content="从拍摄的手写体数字串纸张照片到自动识别数字，本文从手写体数字分割、训练分类器和结果比较三方面结合过程图及代码解读手写体数字识别方法。">
-<meta name="twitter:image" content="http://yoursite.com/images/handwritten-digits-recognition/7.jpg">
+<meta name="twitter:image" content="https://hypjudy.github.io/blog/images/handwritten-digits-recognition/7.jpg">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/blog/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
@@ -170,7 +170,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/10/handwritten-digits-recognition/"/>
+  <link rel="canonical" href="https://hypjudy.github.io/blog/2017/07/10/handwritten-digits-recognition/"/>
 
 
 
@@ -219,7 +219,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">HYPJUDY</span>
         <span class="logo-line-after"><i></i></span>
@@ -247,7 +247,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/blog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -257,7 +257,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/blog/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -294,7 +294,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/10/handwritten-digits-recognition/">
+    <link itemprop="mainEntityOfPage" href="https://hypjudy.github.io/blog/2017/07/10/handwritten-digits-recognition/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HYPJUDY">
@@ -349,7 +349,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/07/10/handwritten-digits-recognition/#comments" itemprop="discussionUrl">
+                <a href="/blog/2017/07/10/handwritten-digits-recognition/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/07/10/handwritten-digits-recognition/" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -377,22 +377,22 @@
 
       
         <p>从拍摄的手写体数字串纸张照片到自动识别数字，本文从手写体数字分割、训练分类器和结果比较三方面结合过程图及代码解读手写体数字识别方法。</p>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_threshold_140.png" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_dilate_cross.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_res_acc.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7.jpg" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_threshold_140.png" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_dilate_cross.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_res_acc.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <a id="more"></a>
 <p>实现使用Python语言、numpy科学计算库和opencv图像库。方法使用<strong>SVM</strong>和<strong>卷积神经网络</strong>。其中SVM使用scikit learn框架，卷积神经网络使用TensorFlow框架。将MNIST数据集划分为训练集和测试集，SVM法可达0.9852的准确率，卷积神经网络可达0.992的准确率。而使用MNIST数据集训练，使用自制数据集测试时，准确率有所下降，在容易集的73个数字中，SVM准确率0.808219，卷积神经网络准确率为1。在难集上SVM平均准确率0.64951525，神经网络平均准确率0.76647275。实验证明，数字的切割方式对测试准确率的影响极大，SVM法对测试集尤为敏感，而神经网络能适应更多样的测试集。</p>
 <p><a href="https://github.com/HYPJUDY/handwritten-digits-recognition" target="_blank" rel="external"><strong>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  代码code</strong></a></p>
 <h1 id="手写体数字分割"><a href="#手写体数字分割" class="headerlink" title="手写体数字分割"></a>手写体数字分割</h1><p>自制测试数据含8张图片（后三张为个人另外准备），目标是将图片中的数字以所在数字串为组按顺序切割成与MNIST数据集一致的格式。</p>
-<h2 id="A4纸矫正"><a href="#A4纸矫正" class="headerlink" title="A4纸矫正"></a>A4纸矫正</h2><p>A4纸矫正请参见<a href="https://hypjudy.github.io/2017/03/28/cvpr-A4-paper-sheet-detection-and-cropping/" target="_blank" rel="external">[CVPR] A4 Paper Sheet Detection and Cropping with Hough Transform and Warping</a>和<a href="https://github.com/HYPJUDY/A4-paper-sheet-detection-and-cropping" target="_blank" rel="external">代码</a>，已对代码进行改进，能支持更多测试数据。<br>下面分别为图0到图7（八张图）的结果，它们的命名与<code>0_A4.bmp</code>类似。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/0_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/1_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/2_A4.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/3_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/4_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/5_A4.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/6_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/blank.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<h2 id="A4纸矫正"><a href="#A4纸矫正" class="headerlink" title="A4纸矫正"></a>A4纸矫正</h2><p>A4纸矫正请参见<a href="https://hypjudy.github.io/2017/03/28/cvpr-A4-paper-sheet-detection-and-cropping/" target="_blank" rel="external">[CVPR] A4 Paper Sheet Detection and Cropping with Hough Transform and Warping</a>和<a href="https://github.com/HYPJUDY/A4-paper-sheet-detection-and-cropping" target="_blank" rel="external">代码</a>，已对代码进行改进，能支持更多测试数据。<br>下面分别为图0到图7（八张图）的结果，它们的命名与<code>0_A4.bmp</code>类似。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/0_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/1_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/2_A4.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/3_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/4_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/5_A4.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div><br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/6_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/blank.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
 <h2 id="图像二值化处理"><a href="#图像二值化处理" class="headerlink" title="图像二值化处理"></a>图像二值化处理</h2><p>数字的训练和测试输入均为二值像素（黑色为0，白色为255或1）。对图像进行阈值处理即可，即低于阈值的均设为0，高于阈值的均设为255。由于我们的输入图像为白底黑字，矫正后的A4纸的部分<strong>黑色边缘需裁减</strong>（crop），避免被误认为黑色文字。又由于MNIST中用白色表示数字，黑色表示背景，要将我们图像中的<strong>黑白色反转</strong>，即低于阈值的均设为255，高于阈值的均设为0。对大部分图像而言，阈值为127可区分出文字和背景。值得注意的是，由于文字不是全黑（边缘为灰色），有时候会和纸张的阴影混淆。<strong>阈值越高</strong>，保留的灰色越多，但可能也将背景的阴影保留了下来；<strong>阈值越低</strong>，保留的灰色越少，但可能使文字断裂现象比较严重。因此阈值的选取不能一概而论，需根据图像的颜色和文字的粗细等情况选取。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cropped = img[CROP_LEN:height - CROP_LEN, CROP_LEN:width - CROP_LEN]</div><div class="line"><span class="comment"># INV for black text</span></div><div class="line">ret, thresh_img = cv2.threshold(cropped, THRESHOLD, <span class="number">255</span>, cv2.THRESH_BINARY_INV)</div></pre></td></tr></table></figure>
-<p>以<code>1_A4.bmp</code>为例：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/1_A4_cropped.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/1_A4_threshold_140.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/1_A4_threshold_120.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br><em>左：裁剪10px边缘图；中：以阈值140处理的二值图；右：以阈值120处理的二值图</em></p>
+<p>以<code>1_A4.bmp</code>为例：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/1_A4_cropped.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/1_A4_threshold_140.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/1_A4_threshold_120.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br><em>左：裁剪10px边缘图；中：以阈值140处理的二值图；右：以阈值120处理的二值图</em></p>
 <h2 id="判断数字串书写方向"><a href="#判断数字串书写方向" class="headerlink" title="判断数字串书写方向"></a>判断数字串书写方向</h2><p>我们对一张图上数字串书写方向的直观感受是：从横向及纵向对数字“投影”（假设数字都堆叠在了该方向上），则数字密集地堆叠为几堆的方向是书写方向，数字零散分布的方向不是。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_vertical_writing</span><span class="params">(img)</span>:</span></div><div class="line">    h, w = img.shape</div><div class="line">    h_bin = np.zeros(h, np.uint16) <span class="comment"># 0 to 65535</span></div><div class="line">    w_bin = np.zeros(w, np.uint16)</div><div class="line">    x, y = np.where(img == <span class="number">255</span>) <span class="comment"># white</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> x:</div><div class="line">        h_bin[i] = h_bin[i] + <span class="number">1</span></div><div class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> y:</div><div class="line">        w_bin[j] = w_bin[j] + <span class="number">1</span></div><div class="line">    <span class="comment"># calculate the number of continuous zero (background)</span></div><div class="line">    <span class="comment"># areas in vertical (h) and horizontal (w) orientation</span></div><div class="line">    n_h_zero_area = <span class="number">0</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(h - <span class="number">1</span>):</div><div class="line">        <span class="keyword">if</span> h_bin[i] == <span class="number">0</span> <span class="keyword">and</span> h_bin[i + <span class="number">1</span>] != <span class="number">0</span>:</div><div class="line">            n_h_zero_area = n_h_zero_area + <span class="number">1</span></div><div class="line">    n_w_zero_area = <span class="number">0</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(w - <span class="number">1</span>):</div><div class="line">        <span class="keyword">if</span> w_bin[i] == <span class="number">0</span> <span class="keyword">and</span> w_bin[i + <span class="number">1</span>] != <span class="number">0</span>:</div><div class="line">            n_w_zero_area = n_w_zero_area + <span class="number">1</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> n_h_zero_area &gt; n_w_zero_area: <span class="comment"># sparse vertically</span></div><div class="line">        <span class="keyword">return</span> <span class="keyword">True</span> <span class="comment"># dense horizontally</span></div><div class="line">    <span class="keyword">return</span> <span class="keyword">False</span></div></pre></td></tr></table></figure>
 <p><code>h_bin</code>（取桶的含义）记录图片每行的白色（数字的颜色）像素个数，size和图片的纵向长度一致；<code>w_bin</code>记录图片每列的白色像素个数，size和图片的横向长度一致；<code>n_h_zero_area</code>表示纵向不相连白色域的个数；<code>n_w_zero_area</code>表示横向不相连白色域的个数。由于分布在横向或纵向总的白色像素数是一样的，联通域越少说明单个连通域的白色像素数越多越密集。<code>n_h_zero_area &gt; n_w_zero_area</code>表示横向连通域个数少，分布密集，为横向。以<code>7_A4.bmp</code>为例，输出<code>h_bin</code>、<code>w_bin</code>、<code>n_h_zero_area</code>和<code>n_w_zero_area</code>：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(&apos;h_bin&apos;, array([ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  3,  5,  7, 18, 34, 34, 49, 56, 48, 33, 29, 25, 26, 19, 14,  9,  7,  6,  4,  5,  5,  4,  3,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  9, 12, 14, 12, 11, 13, 14, 14, 15, 15, 31, 53, 61, 54, 23, 15, 12, 13, 11, 13, 15, 12, 11,  6,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  7, 11, 14,  9, 10, 12, 12, 11, 11, 13, 15, 13,  9,  1,  0,  0,  2,  7,  8, 15, 17, 12, 11, 13, 10, 12, 13, 17, 14, 19, 21, 19, 18, 12, 10, 14, 16, 13, 12, 12, 11,  7,  0,  0,  0,  2,  4,  5,  5,  5,  5,  5,  5,  9, 12, 23, 29, 36, 29, 22, 14,  7,  8,  7,  7,  6,  9, 14, 11,  7,  0,  0,  4,  7,  6,  5,  6,  7, 13, 20, 26, 25, 13,  2,  0,  0,  0,  0,  0, 11, 17, 19, 17, 12, 11, 15, 25, 31, 34, 25, 17, 12, 12, 11,  9, 12, 15, 12,  8,  2,  2,  4,  6, 12, 14, 15, 19, 21, 19, 18,  8,  5,  0,  0,  0,  0,  0,  0,  0,  0,  0,  7, 11, 15, 11, 13, 14, 13, 13, 13, 12, 14, 21, 21, 21, 23, 18, 17, 13, 15, 18, 23, 24, 21, 20, 14, 13, 12, 12, 12, 15, 13, 10, 17, 17, 20, 16, 13, 13, 11, 13, 12, 13, 13, 14, 13,  9,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  4,  7, 13, 14, 15, 13, 13, 13, 20, 23, 25, 26, 24, 20, 17, 16, 14, 11, 22, 24, 28, 29, 29,  9,  8,  8,  7,  8,  9,  9,  6,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  7, 13, 12, 12, 10,  9,  9,  9,  9,  8, 10, 12, 14, 13, 10,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  7, 12, 15, 17, 19, 16, 13, 12, 10, 11, 10,  9, 11, 12, 12, 14, 12,  7,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0], dtype=uint16))</div><div class="line">(&apos;w_bin&apos;, array([ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  3,  4,  5,  5,  5,  5,  5,  9, 12, 12, 14, 26, 41, 59, 66, 63, 57, 66, 69, 74, 69, 63, 57, 56, 51, 50, 48, 51, 58, 63, 61, 57, 51, 36, 21, 13, 11,  9,  8,  7,  5,  4,  3,  3,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 10, 17, 22, 27, 34, 33, 37, 36, 38, 34, 34, 30, 36, 39, 37, 36, 36, 33, 33, 30, 31, 33, 44, 50, 47, 39, 23,  3,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  3,  3,  3,  3,  9, 18, 26, 44, 56, 52, 55, 61, 52, 44, 44, 47, 46, 43, 48, 47, 49, 56, 59, 61, 61, 56, 63, 65, 59, 45, 40, 25, 19, 19, 17, 15, 16, 16, 14,  9,  6,  3,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0], dtype=uint16))</div><div class="line">(&apos;n_h_zero_area&apos;, 11, &apos;n_w_zero_area&apos;, 3)</div></pre></td></tr></table></figure>
 <h2 id="数字串识别"><a href="#数字串识别" class="headerlink" title="数字串识别"></a>数字串识别</h2><p>所给图片上有多个连串数字，首先需要识别出数字串作为整体。采用的方法是数字图像处理中的膨胀。利用膨胀将不同的数字串区分开后，就可以用OpenCV的寻找联通区域函数<a href="http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html" target="_blank" rel="external">cv2.findContours</a>来找出字符串了。<br>OpenCV中膨胀的操作和解释见<a href="http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html" target="_blank" rel="external">Morphological Transformations</a>。简单来说我们需要选取一个kernel（或称为filter），kernel上有0或1，kernel经过图像覆盖的区域内只要至少有一个像素和kernel上的1重合，该像素点即为1。这在我们识别数字串以及后面将做的识别单个数字中有着广泛的应用。<br>本任务中将用到以下kernel</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">####################  kernels for dilating  ######################</span></div><div class="line"><span class="comment"># Used for connect broken digit</span></div><div class="line">kernel_connect = np.array([[<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>], [<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>], [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>]], np.uint8)</div><div class="line"><span class="comment"># Elliptical Kernel</span></div><div class="line">kernel_ellip = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(<span class="number">3</span>, <span class="number">3</span>))</div><div class="line"><span class="comment"># Cross-shaped Kernel</span></div><div class="line"><span class="comment"># to manipulate the orientation of dilation, large x means </span></div><div class="line"><span class="comment"># horizonatally dilating more, large y means vertically dilating more</span></div><div class="line">kernel_cross_h = cv2.getStructuringElement(cv2.MORPH_CROSS,(<span class="number">1</span>, <span class="number">8</span>))</div><div class="line">kernel_cross_w = cv2.getStructuringElement(cv2.MORPH_CROSS,(<span class="number">8</span>, <span class="number">1</span>))</div></pre></td></tr></table></figure>
-<p>一张纸中，对数字进行（多次迭代）膨胀，数字变粗直至连接在了一起。下图第一排为膨胀的结果，第二排为将联通域用矩形框起来的结果。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_dilate_ellip_10iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_dilate_ellip_20iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_dilate_cross.png" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre_10iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre_20iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre_small_rec.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br><em>左：kernel_ellip迭代10次膨胀；中：kernel_ellip迭代20次膨胀；右：kernel_ellip迭代1次后kernel_cross_h迭代10次</em></p>
+<p>一张纸中，对数字进行（多次迭代）膨胀，数字变粗直至连接在了一起。下图第一排为膨胀的结果，第二排为将联通域用矩形框起来的结果。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_dilate_ellip_10iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_dilate_ellip_20iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_dilate_cross.png" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre_10iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre_20iter.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre_small_rec.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br><em>左：kernel_ellip迭代10次膨胀；中：kernel_ellip迭代20次膨胀；右：kernel_ellip迭代1次后kernel_cross_h迭代10次</em></p>
 <p>显然，我们想要的是右图的膨胀方式，正确将数字串膨胀连接在一起。错误的膨胀方式如左图没有将数字串连接起来，单独找到了一个个数字。中图膨胀过度使左右列的两串数字（或上下排两串数字）连接了起来，导致错误识别。<br>右图采用的解决方法是<strong>根据数字串的书写方向进行膨胀</strong>：横向数字串进行横向膨胀，纵向数字串进行纵向膨胀（斜向如对角线方向书写的暂不讨论）。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">is_vertical = is_vertical_writing(thresh_img)</div><div class="line">dilated = cv2.dilate(thresh_img, kernel_ellip, iterations = <span class="number">1</span>)</div><div class="line"><span class="keyword">if</span> is_vertical:</div><div class="line">    dilated = cv2.dilate(dilated, kernel_cross_h, iterations = <span class="number">10</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    dilated = cv2.dilate(dilated, kernel_cross_w, iterations = <span class="number">10</span>)</div></pre></td></tr></table></figure>
 <p>值得注意的是</p>
@@ -403,23 +403,23 @@
  <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> is_vertical <span class="keyword">and</span> (w &lt; <span class="number">30</span> <span class="keyword">or</span> w &gt; <span class="number">100</span> <span class="keyword">or</span> h &lt; <span class="number">70</span> <span class="keyword">or</span> h &gt; <span class="number">520</span>):</div><div class="line">    <span class="keyword">continue</span></div><div class="line"><span class="keyword">elif</span> (is_vertical == <span class="keyword">False</span>) <span class="keyword">and</span> (h &lt; <span class="number">30</span> <span class="keyword">or</span> h &gt; <span class="number">100</span> <span class="keyword">or</span> w &lt; <span class="number">70</span> <span class="keyword">or</span> w &gt; <span class="number">520</span>):</div><div class="line">    continuev</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre_no_ellip.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre_small_rec.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre_no_ellip.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre_small_rec.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <p><em>左：只用<code>kernel_cross_h</code>；中：加<code>kernel_ellip</code>；右：过滤一个点形成的小连通域</em></p>
-<p>使用这种方法，可以较好地适用于全部图片，下面展示了部分结果，数字串无论长短胖瘦横竖均可：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/2_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/3_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/4_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
-<h2 id="单个数字分割"><a href="#单个数字分割" class="headerlink" title="单个数字分割"></a>单个数字分割</h2><p>以<code>7_A4.bmp</code>的第二列数字串518068为例：<br><img src="/images/handwritten-digits-recognition/resize_sample_ori.png" alt=""></p>
+<p>使用这种方法，可以较好地适用于全部图片，下面展示了部分结果，数字串无论长短胖瘦横竖均可：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/2_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/3_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/4_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<h2 id="单个数字分割"><a href="#单个数字分割" class="headerlink" title="单个数字分割"></a>单个数字分割</h2><p>以<code>7_A4.bmp</code>的第二列数字串518068为例：<br><img src="/blog/images/handwritten-digits-recognition/resize_sample_ori.png" alt=""></p>
 <p>对每一个数字串，如何识别出单个的数字。同理可用OpenCV的寻找联通区域函数来找出每个数字。但前提是数字内部不断裂，数字之间不粘连。数字断裂的问题再次可用膨胀解决，同样要注意膨胀的方向，避免将相邻的数字连接起来。粘连的问题业界有“滴水算法”，即利用同一个数字的笔画如流水般自然的趋势找出一个数字内的笔画。简单的方法可用等距切割，适用于大小均匀分布的手写体数字。</p>
-<p>找出单个数字之后需要缩放成28*28像素以适应MNIST数据集。此处缩放的策略非常关键。若不考虑原数字的宽高比直接resize成28*28，数字会变形失真。<br><img src="/images/handwritten-digits-recognition/resize_sample_f.png" alt=""><br>可以看到诸如数字1这种过胖或过瘦的变形严重，其他的虽然肉眼可辨别，但是对于SVM这种基于模板和神经网络这种基于数据的方法会产生较大的误差。</p>
+<p>找出单个数字之后需要缩放成28*28像素以适应MNIST数据集。此处缩放的策略非常关键。若不考虑原数字的宽高比直接resize成28*28，数字会变形失真。<br><img src="/blog/images/handwritten-digits-recognition/resize_sample_f.png" alt=""><br>可以看到诸如数字1这种过胖或过瘦的变形严重，其他的虽然肉眼可辨别，但是对于SVM这种基于模板和神经网络这种基于数据的方法会产生较大的误差。</p>
 <p>正确的策略是先<strong>按原数字宽高比缩放</strong>，空缺的地方用背景色（黑色）填充（padding）。我采用的是将原数字的bounding box居中，上下/左右均匀padding。参考自MNIST官网：</p>
 <blockquote>
 <p>With some classification methods (particuarly template-based methods, such as SVM and K-nearest neighbors), the error rate improves when the digits are centered by bounding box rather than center of mass.</p>
 </blockquote>
-<p>另外还需注意的是最后需要给<strong>数字整体进行padding</strong>，使得28*28像素图像中边缘约4个像素内是背景（黑色），这是通过观察MNIST数据集得知的，同样是为了使自制的数据集尽量和和使用的训练集相似。<br><img src="/images/handwritten-digits-recognition/resize_sample_t.png" alt=""></p>
+<p>另外还需注意的是最后需要给<strong>数字整体进行padding</strong>，使得28*28像素图像中边缘约4个像素内是背景（黑色），这是通过观察MNIST数据集得知的，同样是为了使自制的数据集尽量和和使用的训练集相似。<br><img src="/blog/images/handwritten-digits-recognition/resize_sample_t.png" alt=""></p>
 <p>最后需要注意的是<strong>按顺序读取数字</strong>。通过实践观察知，<a href="http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html" target="_blank" rel="external"><code>cv2.findContours</code></a>在图像中从下到上查找，因此我们需要先旋转图片到纵向书写方向，首个数字在图片下方的方向，并在找到连通域后恢复为水平方向以和MNIST数据集一致。</p>
 <p>整体代码如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Given a string of digits, return each digit</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">split_digits_str</span><span class="params">(s, prefix_name, is_vertical)</span>:</span></div><div class="line">    <span class="comment"># to read digits of a string in order, rotate the image</span></div><div class="line">    <span class="comment"># and let the leading digit lying in the bottom</span></div><div class="line">    <span class="comment"># since cv2.findContours from bottom to top</span></div><div class="line">    <span class="keyword">if</span> is_vertical:</div><div class="line">        s = np.rot90(s, <span class="number">2</span>)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        s = np.rot90(s)</div><div class="line">    </div><div class="line">    <span class="comment"># if each digit is continuous (not broken), needn't dilate</span></div><div class="line">    <span class="comment"># so for image 5/6/7, use (*); otherwise, use (**)</span></div><div class="line">    <span class="comment"># for image 0/1, iter=2; for image 2/3/4, iter=1</span></div><div class="line">    <span class="comment"># s_copy = s.copy() # (*)</span></div><div class="line">    s_copy = cv2.dilate(s, kernel_connect, iterations = <span class="number">1</span>) <span class="comment"># (**)</span></div><div class="line">    </div><div class="line">    s_copy2 = s_copy.copy()</div><div class="line">    contours, hierarchy = cv2.findContours(s_copy2, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)</div><div class="line">    idx = <span class="number">0</span></div><div class="line">    digits_arr = np.array([])</div><div class="line">    <span class="keyword">for</span> contour <span class="keyword">in</span> contours:</div><div class="line">        idx = idx + <span class="number">1</span></div><div class="line">        [x, y, w, h] = cv2.boundingRect(contour)</div><div class="line">        digit = s_copy[y:y + h, x:x + w]</div><div class="line"></div><div class="line">        <span class="comment"># in order to keep the original scale of digit</span></div><div class="line">        <span class="comment"># pad rectangles to squares before resizing</span></div><div class="line">        pad_len = (h - w) / <span class="number">2</span></div><div class="line">        <span class="keyword">if</span> pad_len &gt; <span class="number">0</span>: <span class="comment"># to pad width</span></div><div class="line">            <span class="comment"># Forms a border around an image: top, bottom, left, right</span></div><div class="line">            digit = cv2.copyMakeBorder(digit, <span class="number">0</span>, <span class="number">0</span>, pad_len, pad_len, cv2.BORDER_CONSTANT, value=<span class="number">0</span>)</div><div class="line">        <span class="keyword">elif</span> pad_len &lt; <span class="number">0</span>: <span class="comment"># to pad height</span></div><div class="line">            digit = cv2.copyMakeBorder(digit, -pad_len, -pad_len, <span class="number">0</span>, <span class="number">0</span>, cv2.BORDER_CONSTANT, value=<span class="number">0</span>)</div><div class="line">        pad = digit.shape[<span class="number">0</span>] / <span class="number">5</span> <span class="comment"># avoid the digit directly connect with border, leave around 4 pixels</span></div><div class="line">        digit = cv2.copyMakeBorder(digit, pad, pad, pad, pad, cv2.BORDER_CONSTANT, value=<span class="number">0</span>)</div><div class="line">        digit = cv2.resize(digit, (RESOLUTION, RESOLUTION), interpolation = cv2.INTER_AREA)</div><div class="line">        </div><div class="line">        digit = np.rot90(digit, <span class="number">3</span>) <span class="comment"># rotate back to horizontal orientation</span></div><div class="line">        digit_name = os.path.join(WRITE_FOLDER, prefix_name + <span class="string">'_n'</span> + str(idx) + <span class="string">'.png'</span>)</div><div class="line">        cv2.imwrite(digit_name, digit)</div><div class="line"></div><div class="line">        <span class="comment"># a digit: transform 2D array to 1D array</span></div><div class="line">        digit = np.concatenate([(digit[i]) <span class="keyword">for</span> i <span class="keyword">in</span> range(RESOLUTION)])</div><div class="line">        digits_arr = np.append(digits_arr, digit)</div><div class="line">    </div><div class="line">    <span class="comment"># transform 1D array to 2D array</span></div><div class="line">    digits_arr = digits_arr.reshape((digits_arr.shape[<span class="number">0</span>] / (RESOLUTION * RESOLUTION), <span class="number">-1</span>))</div><div class="line">    <span class="keyword">return</span> digits_arr</div></pre></td></tr></table></figure>
 <h1 id="训练分类器"><a href="#训练分类器" class="headerlink" title="训练分类器"></a>训练分类器</h1><h2 id="MNIST数据集"><a href="#MNIST数据集" class="headerlink" title="MNIST数据集"></a>MNIST数据集</h2><p>官方网站<a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="external">THE MNIST DATABASE of handwritten digits</a>有该数据集的基本信息和各种方法的准确率，SVM和卷积神经网络是准确率较高的两种方法。<br>每个数字为28*28像素的二值图，训练集有六万个样例，测试集有一万个样例。数据量庞大，自身数据测试准确率很高，因此我们主要关注该数据集数字的分布方式（若自制测试集和其类似，应当能达到0.98及以上的准确率）。</p>
-<p><img src="/images/handwritten-digits-recognition/MNIST_samples.png" alt="MNIST_samples.png" title="MNIST samples" style="margin: auto;"><br><em>credit: <a href="https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/unsupervised_learning.html" target="_blank" rel="external">blog (leonardoaraujosantos)</a></em></p>
-<h2 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h2><p>SVM (Support Vector Machines)译为支持向量机，是一种常用的机器学习方法。使用<a href="http://scikit-learn.org/stable/modules/svm.html" target="_blank" rel="external">scikit-learn库训练SVM分类器</a>就不用造轮子了，官方文档对SVM及其训练预测均有一定介绍。下图是SVM使用的四中kernel，我们采用的是RBF kernel，能取得相对高的准确率。<br><img src="/images/handwritten-digits-recognition/sphx_glr_plot_iris_0012.png" alt="svm method" title="svm method, credit: scikit-learn" style="margin: auto;"></p>
+<p><img src="/blog/images/handwritten-digits-recognition/MNIST_samples.png" alt="MNIST_samples.png" title="MNIST samples" style="margin: auto;"><br><em>credit: <a href="https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/unsupervised_learning.html" target="_blank" rel="external">blog (leonardoaraujosantos)</a></em></p>
+<h2 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h2><p>SVM (Support Vector Machines)译为支持向量机，是一种常用的机器学习方法。使用<a href="http://scikit-learn.org/stable/modules/svm.html" target="_blank" rel="external">scikit-learn库训练SVM分类器</a>就不用造轮子了，官方文档对SVM及其训练预测均有一定介绍。下图是SVM使用的四中kernel，我们采用的是RBF kernel，能取得相对高的准确率。<br><img src="/blog/images/handwritten-digits-recognition/sphx_glr_plot_iris_0012.png" alt="svm method" title="svm method, credit: scikit-learn" style="margin: auto;"></p>
 <p>scikit-learn的使用很简洁，自身也已集成MNIST数据集，可直接调用。为了增大数据量，将全部数据集都用作训练集，第一次训练后将模型存入磁盘，以后便可直接载入。参数参考自<a href="https://github.com/ksopyla/svm_mnist_digit_classification" target="_blank" rel="external">svm_mnist_digit_classification</a>，将MNIST数据集划分为训练集和测试集，可达0.9852的准确率。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">train_mnist_svm</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">if</span> os.path.isfile(MODEL_PATH):</div><div class="line">        classifier = joblib.load(MODEL_PATH)</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        mnist = fetch_mldata(<span class="string">'MNIST original'</span>, data_home=<span class="string">'./'</span>)</div><div class="line">        X_data = mnist.data / <span class="number">255.0</span></div><div class="line">        Y = mnist.target</div><div class="line">        classifier = svm.SVC(C=<span class="number">5</span>,gamma=<span class="number">0.05</span>)</div><div class="line">        classifier.fit(X_data, Y)</div><div class="line">        joblib.dump(classifier, MODEL_PATH)</div><div class="line">    <span class="keyword">return</span> classifier</div></pre></td></tr></table></figure>
 <p>测试使用自制的测试集，即前文分割单个数字串的数字的<code>split_digits_str</code>函数返回的<code>digits_arr</code>。由于已将数字图片存在本地磁盘，也可从文件夹中读取生成<code>digits_arr</code>，这样更灵活自如。</p>
@@ -463,16 +463,16 @@
 </tbody>
 </table>
 <p>另外，两者训练时间相差不大（约7-9小时，TensorFlow使用GPU）。<br>基于此结果，可认为卷积神经网络优于SVM。<br>实际不止于此，前文提到的未按宽高比resize的略有变形的数字在SVM分类器上的测试结果极差，低至0是常态。经过多次试验发现数字的粗细、宽扁、大小对SVM预测的准确率有很大影响，而卷积神经网络分类器更能适应数字形态的变化。</p>
-<h2 id="容易集"><a href="#容易集" class="headerlink" title="容易集"></a>容易集</h2><p>容易集的三张图片共有73个数字<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/5_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/6_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
-<p>按顺序切割保存如下，文件名指示了对应的图片、数字串、数字序号，皆按照书写顺序。<br><img src="/images/handwritten-digits-recognition/digits567.png" alt=""></p>
+<h2 id="容易集"><a href="#容易集" class="headerlink" title="容易集"></a>容易集</h2><p>容易集的三张图片共有73个数字<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/5_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/6_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/7_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<p>按顺序切割保存如下，文件名指示了对应的图片、数字串、数字序号，皆按照书写顺序。<br><img src="/blog/images/handwritten-digits-recognition/digits567.png" alt=""></p>
 <p>提取后分别用SVM和神经网络进行预测，输出如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">[root@localhost handwritten-digits-detection]# python mnist_deep.py </div><div class="line">Extracting /tmp/tensorflow/mnist/input_data/train-images-idx3-ubyte.gz</div><div class="line">Extracting /tmp/tensorflow/mnist/input_data/train-labels-idx1-ubyte.gz</div><div class="line">Extracting /tmp/tensorflow/mnist/input_data/t10k-images-idx3-ubyte.gz</div><div class="line">Extracting /tmp/tensorflow/mnist/input_data/t10k-labels-idx1-ubyte.gz</div><div class="line">Model restored.</div><div class="line">labels [0 7 5 5 1 2 3 0 7 4 6 8 5 2 3 0 6 6 4 1 9 3 7 9 6 1 3 7 1 4 5 5 0 4 2 0 1</div><div class="line"> 7 0 7 0 8 1 4 3 2 0 5 2 7 1 8 8 1 9 2 5 0 0 5 1 8 0 6 8 2 6 6 7 8 6 6 4]</div><div class="line">predicted [0 7 5 5 1 2 3 0 7 4 6 8 5 2 3 0 6 6 4 1 9 3 7 9 6 1 3 7 1 4 5 5 0 4 2 0 1</div><div class="line"> 7 0 7 0 8 1 4 3 2 0 5 2 7 1 8 8 1 9 2 5 0 0 5 1 8 0 6 8 2 6 6 7 8 6 6 4]</div><div class="line">[ True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True  True  True  True  True  True  True</div><div class="line">  True]</div><div class="line">test accuracy of digit567 is 73 / 73 = 1.000000</div><div class="line"></div><div class="line">[root@localhost handwritten-digits-detection]# python main.py </div><div class="line">(&apos;labels&apos;, array([0, 7, 5, 5, 1, 2, 3, 0, 7, 4, 6, 8, 5, 2, 3, 0, 6, 6, 4, 1, 9, 3, 7,</div><div class="line">       9, 6, 1, 3, 7, 1, 4, 5, 5, 0, 4, 2, 0, 1, 7, 0, 7, 0, 8, 1, 4, 3, 2,</div><div class="line">       0, 5, 2, 7, 1, 8, 8, 1, 9, 2, 5, 0, 0, 5, 1, 8, 0, 6, 8, 2, 6, 6, 7,</div><div class="line">       8, 6, 6, 4], dtype=uint8))</div><div class="line">(&apos;predicted&apos;, array([ 0.,  7.,  5.,  5.,  1.,  2.,  3.,  0.,  2.,  4.,  6.,  8.,  5.,</div><div class="line">        2.,  3.,  0.,  5.,  6.,  4.,  1.,  9.,  3.,  2.,  1.,  6.,  1.,</div><div class="line">        3.,  1.,  1.,  4.,  5.,  8.,  0.,  4.,  2.,  0.,  1.,  1.,  2.,</div><div class="line">        2.,  0.,  8.,  1.,  4.,  3.,  2.,  0.,  5.,  2.,  7.,  1.,  8.,</div><div class="line">        8.,  1.,  1.,  2.,  5.,  2.,  0.,  8.,  1.,  8.,  0.,  6.,  8.,</div><div class="line">        2.,  6.,  6.,  2.,  8.,  6.,  6.,  8.]))</div><div class="line">[ True  True  True  True  True  True  True  True False  True  True  True</div><div class="line">  True  True  True  True False  True  True  True  True  True False False</div><div class="line">  True  True  True False  True  True  True False  True  True  True  True</div><div class="line">  True False False False  True  True  True  True  True  True  True  True</div><div class="line">  True  True  True  True  True  True False  True  True False  True False</div><div class="line">  True  True  True  True  True  True  True  True False  True  True  True</div><div class="line"> False]</div><div class="line">test accuracy of digit567 is 59 / 73 = 0.808219</div></pre></td></tr></table></figure>
 <p>neural network: 1 8 8 1 9 2 5 0 0; 5 1 8 0 6 8; 2 6 6 7 8 6 6 4<br>           svm: 1 8 8 1 1 2 5 2 0; 8 1 8 0 6 8; 2 6 6 2 8 6 6 8<br>结果表示，使用神经网络可以达到100%的准确率，SVM达80.0%的准确率。SVM的错误主要是7认成2,6认成5,9认成1等比较相似的数字。</p>
 <h2 id="难集"><a href="#难集" class="headerlink" title="难集"></a>难集</h2><p>难集的数字较为自ling然luan，下图左中右分别为图1、3、4</p>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/1_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/3_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/handwritten-digits-recognition/4_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
-<p><img src="/images/handwritten-digits-recognition/digits1.png" alt=""><br>图一切割出的数字中7和9是比较难辨别的，因为收尾拉伸得长导致数字过瘦。</p>
-<p><img src="/images/handwritten-digits-recognition/digits3.png" alt=""><br>图三出现了数字粘连的情况，需要进一步切割。数字的粗细不一，0较粗，7较细。</p>
-<p><img src="/images/handwritten-digits-recognition/digits4.png" alt=""><br>图四的情况类似。这些过细或过粗的数字也是准确率较低的数字。</p>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/1_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/3_A4_thre.png" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/handwritten-digits-recognition/4_A4_thre.png" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<p><img src="/blog/images/handwritten-digits-recognition/digits1.png" alt=""><br>图一切割出的数字中7和9是比较难辨别的，因为收尾拉伸得长导致数字过瘦。</p>
+<p><img src="/blog/images/handwritten-digits-recognition/digits3.png" alt=""><br>图三出现了数字粘连的情况，需要进一步切割。数字的粗细不一，0较粗，7较细。</p>
+<p><img src="/blog/images/handwritten-digits-recognition/digits4.png" alt=""><br>图四的情况类似。这些过细或过粗的数字也是准确率较低的数字。</p>
 
       
     </div>
@@ -503,7 +503,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/23/regression-classification-kaggle/" rel="next" title="[数据挖掘] 回归和分类Kaggle实战">
+              <a href="/blog/2017/06/23/regression-classification-kaggle/" rel="next" title="[数据挖掘] 回归和分类Kaggle实战">
                 <i class="fa fa-chevron-left"></i> [数据挖掘] 回归和分类Kaggle实战
               </a>
             
@@ -578,7 +578,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/blog/images/avatar.png"
                alt="HYPJUDY" />
           <p class="site-author-name" itemprop="name">HYPJUDY</p>
            
@@ -589,7 +589,7 @@
         
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
+              <a href="/blog/archives">
                 <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -720,46 +720,46 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 

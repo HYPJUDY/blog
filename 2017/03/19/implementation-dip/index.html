@@ -32,7 +32,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -66,9 +66,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.png?v=5.1.0" />
 
 
 
@@ -90,85 +90,85 @@
 <meta name="description" content="Histogram equalization is a technique for adjusting image intensities to enhance contrast.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[DIP] Histogram Equalization on Grayscale and Color Image">
-<meta property="og:url" content="http://yoursite.com/2017/03/19/implementation-dip/index.html">
+<meta property="og:url" content="https://hypjudy.github.io/blog/2017/03/19/implementation-dip/index.html">
 <meta property="og:site_name" content="HYPJUDY">
 <meta property="og:description" content="Histogram equalization is a technique for adjusting image intensities to enhance contrast.">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_1_h.jpg">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_2_h.jpg">
-<meta property="og:image" content="http://yoursite.com/images/dip/rgb2hsi.jpg">
-<meta property="og:image" content="http://yoursite.com/images/dip/hsi2rgb.jpg">
-<meta property="og:image" content="http://yoursite.com/images/dip/19.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/19_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/19_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/19_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/19_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/19_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/28_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/8_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/9_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/20_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/18_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/7_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/21_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/3_3.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30_gray.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30_eq.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30_1.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30_2.bmp">
-<meta property="og:image" content="http://yoursite.com/images/dip/30_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_1_h.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_2_h.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/rgb2hsi.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/hsi2rgb.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/19_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/28_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/8_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/9_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/20_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/18_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/7_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/21_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/3_3.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30_gray.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30_eq.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30_1.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30_2.bmp">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/dip/30_3.bmp">
 <meta property="og:updated_time" content="2017-03-21T06:43:45.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[DIP] Histogram Equalization on Grayscale and Color Image">
 <meta name="twitter:description" content="Histogram equalization is a technique for adjusting image intensities to enhance contrast.">
-<meta name="twitter:image" content="http://yoursite.com/images/dip/9_1_h.jpg">
+<meta name="twitter:image" content="https://hypjudy.github.io/blog/images/dip/9_1_h.jpg">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/blog/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
@@ -189,7 +189,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/19/implementation-dip/"/>
+  <link rel="canonical" href="https://hypjudy.github.io/blog/2017/03/19/implementation-dip/"/>
 
 
 
@@ -229,7 +229,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">HYPJUDY</span>
         <span class="logo-line-after"><i></i></span>
@@ -257,7 +257,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/blog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -267,7 +267,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/blog/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/implementation-dip/">
+    <link itemprop="mainEntityOfPage" href="https://hypjudy.github.io/blog/2017/03/19/implementation-dip/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HYPJUDY">
@@ -359,7 +359,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/19/implementation-dip/#comments" itemprop="discussionUrl">
+                <a href="/blog/2017/03/19/implementation-dip/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/19/implementation-dip/" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -419,16 +419,16 @@
 <blockquote>
 <p>Applying the same method on the Red, Green, and Blue components of an RGB image may yield dramatic changes in the image’s <a href="https://en.wikipedia.org/wiki/Color_balance" target="_blank" rel="external">color balance</a> since the relative distributions of the color channels change as a result of applying the algorithm.</p>
 </blockquote>
-<p>Here’s an example.<br><img src="/images/dip/9_1_h.jpg" alt=""><br>The R, G and B channel’s histogram are totally different. When we apply independent equalization on them respectively, we get B. The intensities have been better distributen on the histogram but B’s color is out of balance. This is caused by the change of relative distributions of the color channels. For example, A’s green components mostly distribute on low levels/small intensities while B’s green components distribute over the whole levels much more evenly. This makes B looks bluer.</p>
+<p>Here’s an example.<br><img src="/blog/images/dip/9_1_h.jpg" alt=""><br>The R, G and B channel’s histogram are totally different. When we apply independent equalization on them respectively, we get B. The intensities have been better distributen on the histogram but B’s color is out of balance. This is caused by the change of relative distributions of the color channels. For example, A’s green components mostly distribute on low levels/small intensities while B’s green components distribute over the whole levels much more evenly. This makes B looks bluer.</p>
 <h2 id="Histogram-equalization-based-on-average-value-of-color-channel"><a href="#Histogram-equalization-based-on-average-value-of-color-channel" class="headerlink" title="Histogram equalization based on average value of color channel"></a>Histogram equalization based on average value of color channel</h2><p>What we want is a better distributed RGB histogram but not all histograms including color channels. So we can take the three channels as a whole when calculate the histogram.</p>
 <h3 id="Implementation-2"><a href="#Implementation-2" class="headerlink" title="Implementation"></a>Implementation</h3><p>The only difference between the second and first method is that the second method uses an average histogram of the three channels’ histograms.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cimg_forXY(redChannel, x, y) &#123;</div><div class="line">    ++histogram[redChannel(x, y)];</div><div class="line">    ++histogram[greenChannel(x, y)];</div><div class="line">    ++histogram[blueChannel(x, y)];</div><div class="line">&#125;</div><div class="line">cimg_forX(histogram, pos) histogram(pos) /= <span class="number">3</span>;</div></pre></td></tr></table></figure>
-<h3 id="Analysis-1"><a href="#Analysis-1" class="headerlink" title="Analysis"></a>Analysis</h3><p>This method considers the relevance of R, G and B channel and gets better results.<br>Here’s an example.<br><img src="/images/dip/9_2_h.jpg" alt=""></p>
+<h3 id="Analysis-1"><a href="#Analysis-1" class="headerlink" title="Analysis"></a>Analysis</h3><p>This method considers the relevance of R, G and B channel and gets better results.<br>Here’s an example.<br><img src="/blog/images/dip/9_2_h.jpg" alt=""></p>
 <h2 id="Intensity-component-equalization-based-on-HSI-color-space"><a href="#Intensity-component-equalization-based-on-HSI-color-space" class="headerlink" title="Intensity component equalization based on HSI color space"></a>Intensity component equalization based on HSI color space</h2><h3 id="Implementation-3"><a href="#Implementation-3" class="headerlink" title="Implementation"></a>Implementation</h3><p>The image is first converted to HSI color space, then apply the grayscale method to the luminance without resulting in changes to the hue and saturation of the image.</p>
-<h4 id="Converting-colors-from-RGB-to-HSI"><a href="#Converting-colors-from-RGB-to-HSI" class="headerlink" title="Converting colors from RGB to HSI"></a>Converting colors from RGB to HSI</h4><p>The formula I used comes from Digital Image Processing (3rd Edition): Rafael C. Gonzalez, Richard E.Woods, section 6.2.3 The HSI Color Model. Here I found the same formula from <a href="http://eeweb.poly.edu/~yao/EL5123/lecture2_color_quant.pdf" target="_blank" rel="external">Yao Wang’s PPT</a> for quick reference.<br><img src="/images/dip/rgb2hsi.jpg" alt=""></p>
+<h4 id="Converting-colors-from-RGB-to-HSI"><a href="#Converting-colors-from-RGB-to-HSI" class="headerlink" title="Converting colors from RGB to HSI"></a>Converting colors from RGB to HSI</h4><p>The formula I used comes from Digital Image Processing (3rd Edition): Rafael C. Gonzalez, Richard E.Woods, section 6.2.3 The HSI Color Model. Here I found the same formula from <a href="http://eeweb.poly.edu/~yao/EL5123/lecture2_color_quant.pdf" target="_blank" rel="external">Yao Wang’s PPT</a> for quick reference.<br><img src="/blog/images/dip/rgb2hsi.jpg" alt=""></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// H component</span></div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; numerator(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; denominator(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; theta(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">cimg_forXY(R, x, y) &#123;</div><div class="line">    numerator(x, y) = <span class="number">0.5</span> * ((R(x, y) - G(x, y)) + (R(x, y) - B(x, y)));</div><div class="line">    denominator(x, y) = <span class="built_in">sqrt</span>((R(x, y) - G(x, y)) * (R(x, y) - G(x, y)) +</div><div class="line">            (R(x, y) - B(x, y)) * (G(x, y) - B(x, y)));</div><div class="line">    theta(x, y) = <span class="built_in">acos</span>(numerator(x, y) / denominator(x, y));</div><div class="line">&#125;</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; H(theta);</div><div class="line">cimg_forXY(R, x, y)</div><div class="line">    <span class="keyword">if</span> (B(x, y) &gt; G(x, y)) H(x, y) = <span class="number">2</span> * cimg::PI - H(x, y);</div><div class="line"></div><div class="line"><span class="comment">// saturation component</span></div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; num(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; den(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; S(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; I(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">cimg_forXY(R, x, y) &#123;</div><div class="line">    num(x, y) = cimg::min(R(x, y), G(x, y), B(x, y));</div><div class="line">    den(x, y) = R(x, y) + G(x, y) + B(x, y);</div><div class="line">    <span class="keyword">if</span> (den(x, y) == <span class="number">0</span>) den(x, y) = <span class="number">1e-10</span>f; <span class="comment">// epsilon, avoid 0 division</span></div><div class="line">    S(x, y) = <span class="number">1</span> - <span class="number">3.0</span> * num(x, y) / den(x, y);</div><div class="line">    <span class="keyword">if</span> (S(x, y) == <span class="number">0</span>) H(x, y) = <span class="number">0</span>;</div><div class="line">    <span class="comment">// intensity component</span></div><div class="line">    I(x, y) = (R(x, y) + G(x, y) + G(x, y)) / <span class="number">3.0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="Perform-histogram-equalization-on-the-intensity-channel"><a href="#Perform-histogram-equalization-on-the-intensity-channel" class="headerlink" title="Perform histogram equalization on the intensity channel"></a>Perform histogram equalization on the intensity channel</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">CImg&lt;<span class="keyword">unsigned</span> <span class="keyword">int</span>&gt; I_int = equalize_hist(I * <span class="number">255</span>); <span class="comment">// parameter must be integer</span></div><div class="line">cimg_forXY(R, x, y) I(x, y, <span class="number">0</span>) = I_int(x, y) * <span class="number">1.0</span> / <span class="number">255.0</span>;</div></pre></td></tr></table></figure>
-<h4 id="Converting-colors-from-HSI-to-RGB"><a href="#Converting-colors-from-HSI-to-RGB" class="headerlink" title="Converting colors from HSI to RGB"></a>Converting colors from HSI to RGB</h4><p><img src="/images/dip/hsi2rgb.jpg" alt=""></p>
+<h4 id="Converting-colors-from-HSI-to-RGB"><a href="#Converting-colors-from-HSI-to-RGB" class="headerlink" title="Converting colors from HSI to RGB"></a>Converting colors from HSI to RGB</h4><p><img src="/blog/images/dip/hsi2rgb.jpg" alt=""></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// new rgb channel</span></div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; r(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; g(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line">CImg&lt;<span class="keyword">double</span>&gt; b(w, h, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>);</div><div class="line"><span class="comment">// RG sector(0&lt;=H&lt;120)</span></div><div class="line">cimg_forXY(H, x, y) &#123;</div><div class="line">    <span class="keyword">if</span> (H(x, y) &gt;= <span class="number">0</span> &amp;&amp; H(x, y) &lt; <span class="number">2</span> * cimg::PI / <span class="number">3</span>) &#123;</div><div class="line">        b(x, y) = I(x, y) * (<span class="number">1</span> - S(x, y));</div><div class="line">        r(x, y) = I(x, y) * (<span class="number">1</span> + ((S(x, y)*<span class="built_in">cos</span>(H(x, y))) / <span class="built_in">cos</span>(cimg::PI/<span class="number">3</span> - H(x, y))));</div><div class="line">        g(x, y) = <span class="number">3</span> * I(x, y) - (r(x, y) + b(x, y));</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// GB sector(120&lt;=H&lt;240)</span></div><div class="line">cimg_forXY(H, x, y) &#123;</div><div class="line">    <span class="keyword">if</span> (H(x, y) &gt;= <span class="number">2</span> * cimg::PI / <span class="number">3</span> &amp;&amp; H(x, y) &lt; <span class="number">4</span> * cimg::PI / <span class="number">3</span>) &#123;</div><div class="line">        r(x, y) = I(x, y) * (<span class="number">1</span> - S(x, y));</div><div class="line">        g(x, y) = I(x, y) * (<span class="number">1</span> + ((S(x, y) * <span class="built_in">cos</span>(H(x, y) - <span class="number">2</span>*cimg::PI/<span class="number">3</span>))</div><div class="line">            / <span class="built_in">cos</span>(cimg::PI/<span class="number">3</span> - (H(x, y) - <span class="number">2</span> cimg::PI/<span class="number">3</span>))));</div><div class="line">        b(x, y) = <span class="number">3</span> * I(x, y) - (r(x, y) + g(x, y));</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// BR sector(240&lt;=H&lt;=360)</span></div><div class="line">cimg_forXY(H, x, y) &#123;</div><div class="line">    <span class="keyword">if</span> (H(x, y) &gt;= <span class="number">4</span> * cimg::PI / <span class="number">3</span> &amp;&amp; H(x, y) &lt;= <span class="number">2</span> * cimg::PI) &#123;</div><div class="line">        g(x, y) = I(x, y) * (<span class="number">1</span> - S(x, y));</div><div class="line">        b(x, y) = I(x, y) * (<span class="number">1</span> + ((S(x, y) * <span class="built_in">cos</span>(H(x, y) - <span class="number">4</span> * cimg::PI / <span class="number">3</span>))</div><div class="line">            / <span class="built_in">cos</span>(cimg::PI / <span class="number">3</span> - (H(x, y) - <span class="number">4</span> * cimg::PI / <span class="number">3</span>))));</div><div class="line">        r(x, y) = <span class="number">3</span> * I(x, y) - (g(x, y) + b(x, y));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="Rebuild-an-RGB-image-from-the-three-processed-channels"><a href="#Rebuild-an-RGB-image-from-the-three-processed-channels" class="headerlink" title="Rebuild an RGB image from the three processed channels"></a>Rebuild an RGB image from the three processed channels</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CImg&lt;<span class="keyword">double</span>&gt; output_img(w, h, <span class="number">1</span>, <span class="number">3</span>, <span class="number">0</span>);</div><div class="line">cimg_forXY(output_img, x, y) &#123; <span class="comment">//  0.0 &lt;= value &lt;= 1.0</span></div><div class="line">    output_img(x, y, <span class="number">0</span>) = cimg::min(cimg::max(r(x, y), <span class="number">0</span>), <span class="number">1</span>);</div><div class="line">    output_img(x, y, <span class="number">1</span>) = cimg::min(cimg::max(g(x, y), <span class="number">0</span>), <span class="number">1</span>);</div><div class="line">    output_img(x, y, <span class="number">2</span>) = cimg::min(cimg::max(b(x, y), <span class="number">0</span>), <span class="number">1</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="Analysis-2"><a href="#Analysis-2" class="headerlink" title="Analysis"></a>Analysis</h3><h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>All photos are taken by myself. Feel free to take away if you like.<br>Each group of six images is arranged in two rows in the following order.</p>
@@ -452,11 +452,11 @@
 <h2 id="Case-1-Backgrounds-and-foregrounds-are-both-bright-or-both-dark"><a href="#Case-1-Backgrounds-and-foregrounds-are-both-bright-or-both-dark" class="headerlink" title="Case 1: Backgrounds and foregrounds are both bright or both dark"></a>Case 1: Backgrounds and foregrounds are both bright or both dark</h2><blockquote>
 <p>The method is useful in images with backgrounds and foregrounds that are both bright or both dark. In particular, the method can lead to better views of bone structure in x-ray images, and to better detail in photographs that are over or under-exposed. (<a href="https://en.wikipedia.org/wiki/Histogram_equalization" target="_blank" rel="external">wiki</a>)</p>
 </blockquote>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/19_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/19_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Background and foreground that are both bright.</div>
 
 <hr>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/28_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/28_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Background and foreground that are both dark.</div>
 
 <hr>
@@ -492,28 +492,28 @@
 </tbody>
 </table>
 <hr>
-<p>Here are two examples I cannot strictly include them into this case(backgrounds and foregrounds are both bright or dark) but they have the same features.<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/8_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<p>Here are two examples I cannot strictly include them into this case(backgrounds and foregrounds are both bright or dark) but they have the same features.<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/8_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
 <div style="text-align:center">Background seems brighter.</div>
 
 <hr>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/9_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/9_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Candles seems brighter.</div>
 
 <hr>
 <h2 id="Case-2-Backgrounds-are-brighter-or-darker"><a href="#Case-2-Backgrounds-are-brighter-or-darker" class="headerlink" title="Case 2: Backgrounds are brighter or darker"></a>Case 2: Backgrounds are brighter or darker</h2><p>It also works well when applied to images with backgrounds much brighter or foregrounds much brighter.</p>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/20_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/20_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Background brighter.</div>
 
 <hr>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/18_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/18_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Foreground brighter.</div>
 
 <hr>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/7_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/7_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Lanterns are brighter.</div>
 
 <hr>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/21_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/21_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Local areas are brighter.</div>
 
 <hr>
@@ -548,10 +548,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="Case-3-Good-results-for-all-methods"><a href="#Case-3-Good-results-for-all-methods" class="headerlink" title="Case 3: Good results for all methods"></a>Case 3: Good results for all methods</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/3_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<h2 id="Case-3-Good-results-for-all-methods"><a href="#Case-3-Good-results-for-all-methods" class="headerlink" title="Case 3: Good results for all methods"></a>Case 3: Good results for all methods</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/3_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">Little difference between all methods. All are brighter.</div>
 
-<h2 id="Case-4-Bad-results-for-all-methods"><a href="#Case-4-Bad-results-for-all-methods" class="headerlink" title="Case 4: Bad results for all methods"></a>Case 4: Bad results for all methods</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/images/dip/30_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<h2 id="Case-4-Bad-results-for-all-methods"><a href="#Case-4-Bad-results-for-all-methods" class="headerlink" title="Case 4: Bad results for all methods"></a>Case 4: Bad results for all methods</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30_gray.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30_eq.bmp" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30_1.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30_2.bmp" alt=""></div><div class="group-picture-column" style="width: 33.333333333333336%;"><img src="/blog/images/dip/30_3.bmp" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <div style="text-align:center">The grasses are unrealistic and the figure is outlined against the background with white line.</div>
 
 <hr>
@@ -586,7 +586,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/19/paperreading-color-transfer/" rel="next" title="[PaperReading] Color Transfer between Images, Erik Reinhard et al, 2001">
+              <a href="/blog/2017/03/19/paperreading-color-transfer/" rel="next" title="[PaperReading] Color Transfer between Images, Erik Reinhard et al, 2001">
                 <i class="fa fa-chevron-left"></i> [PaperReading] Color Transfer between Images, Erik Reinhard et al, 2001
               </a>
             
@@ -621,7 +621,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/03/19/implementation-dip/"
-           data-title="[DIP] Histogram Equalization on Grayscale and Color Image" data-url="http://yoursite.com/2017/03/19/implementation-dip/">
+           data-title="[DIP] Histogram Equalization on Grayscale and Color Image" data-url="https://hypjudy.github.io/blog/2017/03/19/implementation-dip/">
       </div>
     
   </div>
@@ -658,7 +658,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/blog/images/avatar.png"
                alt="HYPJUDY" />
           <p class="site-author-name" itemprop="name">HYPJUDY</p>
            
@@ -669,7 +669,7 @@
         
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
+              <a href="/blog/archives">
                 <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -800,46 +800,46 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
@@ -865,8 +865,8 @@
   
     
     
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+    <script src="/blog/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/blog/js/src/hook-duoshuo.js"></script>
   
 
 

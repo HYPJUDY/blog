@@ -32,7 +32,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -66,9 +66,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -80,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.png?v=5.1.0" />
 
 
 
@@ -90,42 +90,42 @@
 <meta name="description" content="详细探讨解决Kaggle上某回归/分类比赛的全过程。包括用线性回归之梯度下降法/正规方程法（MATLAB）、神经网络之多层感知器（TensorFlow）、最近邻（scikit-learn）进行回归预测和用逻辑回归之梯度上升法（Python）、梯度提升决策树（XGBoost）进行分类预测。读者将理解线性回归和逻辑回归的原理/实现、其他框架的使用/调参，以及如何利用Python的多进程对逻辑回归的运算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[数据挖掘] 回归和分类Kaggle实战">
-<meta property="og:url" content="http://yoursite.com/2017/06/23/regression-classification-kaggle/index.html">
+<meta property="og:url" content="https://hypjudy.github.io/blog/2017/06/23/regression-classification-kaggle/index.html">
 <meta property="og:site_name" content="HYPJUDY">
 <meta property="og:description" content="详细探讨解决Kaggle上某回归/分类比赛的全过程。包括用线性回归之梯度下降法/正规方程法（MATLAB）、神经网络之多层感知器（TensorFlow）、最近邻（scikit-learn）进行回归预测和用逻辑回归之梯度上升法（Python）、梯度提升决策树（XGBoost）进行分类预测。读者将理解线性回归和逻辑回归的原理/实现、其他框架的使用/调参，以及如何利用Python的多进程对逻辑回归的运算">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/gd1.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/gd-slope.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/gd2.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/gdcost.jpg">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/normal-eq1.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/normal-eq2.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/mlp_network.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/scikit-learn-algorithm.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/regression-score.gif">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/regression-time.gif">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/sigmoid.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/L_theta.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/derivative-gradient-ascent.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/stochastic-gradient-descent.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/logistic-regression-gradient-descent.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/feature-scaling.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/LMS-rule.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/stochastic-gradient-descent.png">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/multiprocess-parallel-time.gif">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/logistic-regression-gradient-ascent-acc.gif">
-<meta property="og:image" content="http://yoursite.com/images/reg-classification-kaggle/logistic-regression-gradient-ascent-time.gif">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/gd1.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/gd-slope.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/gd2.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/gdcost.jpg">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/normal-eq1.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/normal-eq2.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/mlp_network.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/scikit-learn-algorithm.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/regression-score.gif">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/regression-time.gif">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/sigmoid.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/L_theta.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/derivative-gradient-ascent.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/stochastic-gradient-descent.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/logistic-regression-gradient-descent.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/feature-scaling.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/LMS-rule.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/stochastic-gradient-descent.png">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/multiprocess-parallel-time.gif">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/logistic-regression-gradient-ascent-acc.gif">
+<meta property="og:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/logistic-regression-gradient-ascent-time.gif">
 <meta property="og:updated_time" content="2017-07-10T10:16:40.441Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[数据挖掘] 回归和分类Kaggle实战">
 <meta name="twitter:description" content="详细探讨解决Kaggle上某回归/分类比赛的全过程。包括用线性回归之梯度下降法/正规方程法（MATLAB）、神经网络之多层感知器（TensorFlow）、最近邻（scikit-learn）进行回归预测和用逻辑回归之梯度上升法（Python）、梯度提升决策树（XGBoost）进行分类预测。读者将理解线性回归和逻辑回归的原理/实现、其他框架的使用/调参，以及如何利用Python的多进程对逻辑回归的运算">
-<meta name="twitter:image" content="http://yoursite.com/images/reg-classification-kaggle/gd1.png">
+<meta name="twitter:image" content="https://hypjudy.github.io/blog/images/reg-classification-kaggle/gd1.png">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/blog/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
@@ -146,7 +146,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/23/regression-classification-kaggle/"/>
+  <link rel="canonical" href="https://hypjudy.github.io/blog/2017/06/23/regression-classification-kaggle/"/>
 
 
 
@@ -195,7 +195,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/blog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">HYPJUDY</span>
         <span class="logo-line-after"><i></i></span>
@@ -223,7 +223,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/blog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -233,7 +233,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/blog/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -270,7 +270,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/23/regression-classification-kaggle/">
+    <link itemprop="mainEntityOfPage" href="https://hypjudy.github.io/blog/2017/06/23/regression-classification-kaggle/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HYPJUDY">
@@ -325,7 +325,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/06/23/regression-classification-kaggle/#comments" itemprop="discussionUrl">
+                <a href="/blog/2017/06/23/regression-classification-kaggle/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/23/regression-classification-kaggle/" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -380,16 +380,16 @@
 <p>目标是找到使代价函数尽量小的$\theta$。具体的学习方法，可参考<a href="https://www.amazon.cn/%E5%9B%BE%E4%B9%A6/dp/B01ARKEV1G" target="_blank" rel="external">《机器学习》第3章</a></p>
 <p>接下来将讨论两种解线性回归的方法：梯度下降法和正规方程法。</p>
 <h3 id="梯度下降法-Gradient-Descent"><a href="#梯度下降法-Gradient-Descent" class="headerlink" title="梯度下降法(Gradient Descent)"></a>梯度下降法(Gradient Descent)</h3><p>推荐阅读：<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part I</a></p>
-<h4 id="算法概观"><a href="#算法概观" class="headerlink" title="算法概观"></a>算法概观</h4><p><img src="/images/reg-classification-kaggle/gd1.png" title="图一：梯度下降法, credit: Andrew Ng"><br>式子$h_{\theta}(x)={\theta}^Tx={\theta}_0x_0+{\theta}_1x_1+{\theta}_2x_2+…+{\theta}_nx_n$中的$x_1…x_n$是特征/变量，${\theta}_1…{\theta}_n$是待求参数。</p>
+<h4 id="算法概观"><a href="#算法概观" class="headerlink" title="算法概观"></a>算法概观</h4><p><img src="/blog/images/reg-classification-kaggle/gd1.png" title="图一：梯度下降法, credit: Andrew Ng"><br>式子$h_{\theta}(x)={\theta}^Tx={\theta}_0x_0+{\theta}_1x_1+{\theta}_2x_2+…+{\theta}_nx_n$中的$x_1…x_n$是特征/变量，${\theta}_1…{\theta}_n$是待求参数。</p>
 <p>梯度下降法是解决线性回归的一种方法。思路是选择一个初始的$\theta$值，并重复进行更新$\theta$以使得代价函数$J(\theta)$一直减小，直到达到极小值。具体算法是重复下面的步骤（同步更新$j=0,…,n$）：<br>$$\theta_j:=\theta_j-\alpha\frac{ \partial }{ \partial \theta_j }J(\theta)$$</p>
 <p><a name="meaning-of-descent"></a></p>
-<h4 id="梯度“下降”的含义"><a href="#梯度“下降”的含义" class="headerlink" title="梯度“下降”的含义"></a>梯度“下降”的含义</h4><p>更新规则（上式）中的<strong>减号</strong>用于<strong>最小化</strong>代价函数，这就是<strong>下降</strong>最直接的含义。<br>$\alpha$是学习率(learning rate)，梯度下降算法每次在$J$下降最快的方向走了一步，表现为找到的参数对应的代价“下降”。简化、直观的理解见下图：<br><img src="/images/reg-classification-kaggle/gd-slope.png" title="图二：迭代收敛图, credit: Andrew Ng"><br>图中的$\frac{ \partial }{ \partial \theta_j }J(\theta)$是偏导数(partial derivative)，Positive slope表示切线斜率(slope of the tangent)为正（反之为负），它们和梯度(gradient)的关系是</p>
+<h4 id="梯度“下降”的含义"><a href="#梯度“下降”的含义" class="headerlink" title="梯度“下降”的含义"></a>梯度“下降”的含义</h4><p>更新规则（上式）中的<strong>减号</strong>用于<strong>最小化</strong>代价函数，这就是<strong>下降</strong>最直接的含义。<br>$\alpha$是学习率(learning rate)，梯度下降算法每次在$J$下降最快的方向走了一步，表现为找到的参数对应的代价“下降”。简化、直观的理解见下图：<br><img src="/blog/images/reg-classification-kaggle/gd-slope.png" title="图二：迭代收敛图, credit: Andrew Ng"><br>图中的$\frac{ \partial }{ \partial \theta_j }J(\theta)$是偏导数(partial derivative)，Positive slope表示切线斜率(slope of the tangent)为正（反之为负），它们和梯度(gradient)的关系是</p>
 <blockquote>
 <p>If f(x1, …, xn) is a differentiable, real-valued function of several variables, its <strong>gradient</strong> is the vector whose components are the n <strong>partial derivatives</strong> of f. Like the derivative, the <strong>gradient</strong> represents the <strong>slope of the tangent</strong> of the graph of the function. (<a href="https://en.wikipedia.org/wiki/Gradient" target="_blank" rel="external">wiki</a>)</p>
 </blockquote>
 <p>值得注意的是，在梯度下降法的迭代过程中梯度也在下降：梯度是有方向的向量，由多个偏导数组成。梯度代表了切线斜率。从图二可以看出，无论梯度（切线斜率）初始为正还是负，在迭代过程中都会减小，减小到0时意味着找到了极小值，终止迭代。<br>但<strong>不能</strong>认为梯度上升法中的梯度在上升（读者可以一个向上凸的代价函数为例思考），<strong>“上升”</strong>可理解为<strong>加号</strong>用于<strong>最大化</strong>函数（在后文将讨论的逻辑回归法中指参数概率$L(\theta)$而不是<em>代价函数</em>，代价函数总是应该被最小化）。</p>
 <h4 id="梯度“下降”证明"><a href="#梯度“下降”证明" class="headerlink" title="梯度“下降”证明"></a>梯度“下降”证明</h4><p><strong>梯度下降方法在选取的$\alpha$足够小、迭代运算次数足够多的情况下可以确保每次迭代$J$都减小并达到极小值。</strong>证明如下：<br>设代价函数上某点$\theta_1$，在$\alpha$<strong>足够小的正数</strong>时，迭代一步更新为$\theta_1^*=\theta_1-\alpha\frac{ \partial }{ \partial \theta_1}J(\theta_1)$.可认为$\theta_1$与$\theta_1^*$之间的曲线和曲线上点$\theta_1$处的切线重合，切线斜率$k$等于偏导数：<br>$$k=\frac{ \partial }{ \partial \theta_1 }J(\theta_1=\theta_1^*)$$ 又代价函数在$\theta_1$的值用点斜式可以表示为<br>$$J(\theta_1)=k\theta_1+b$$ 在$\theta_1^*$的值表示为<br>$$J(\theta_1^*)=k\theta_1^*+b=k(\theta_1-\alpha\frac{ \partial }{ \partial \theta_1}J(\theta_1))+b$$ 结合上面三个式子计算得到<br>$$J(\theta_1^*)-J(\theta_1)=\alpha(\frac{ \partial }{ \partial \theta_1}J(\theta_1))^2\geq0$$ 大部分情况下两者之差是正数，说明J在减小。若两者之差为0，即偏导数为0，说明已收敛到极小值处，可以停止计算了。</p>
-<h4 id="计算偏导数"><a href="#计算偏导数" class="headerlink" title="计算偏导数"></a>计算偏导数</h4><p>图一中的偏导数进一步计算（此处省略计算过程）得到$\frac{ \partial }{ \partial y }J(\theta)=\frac{1}{m}\displaystyle \sum_{ i = 1 }^{ m } (h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$，即下图<br><img src="/images/reg-classification-kaggle/gd2.png" title="图三：梯度下降法具体实现, credit: Andrew Ng"></p>
+<h4 id="计算偏导数"><a href="#计算偏导数" class="headerlink" title="计算偏导数"></a>计算偏导数</h4><p>图一中的偏导数进一步计算（此处省略计算过程）得到$\frac{ \partial }{ \partial y }J(\theta)=\frac{1}{m}\displaystyle \sum_{ i = 1 }^{ m } (h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$，即下图<br><img src="/blog/images/reg-classification-kaggle/gd2.png" title="图三：梯度下降法具体实现, credit: Andrew Ng"></p>
 <h4 id="用MATLAB实现"><a href="#用MATLAB实现" class="headerlink" title="用MATLAB实现"></a>用MATLAB实现</h4><h5 id="读写数据及测试"><a href="#读写数据及测试" class="headerlink" title="读写数据及测试"></a>读写数据及测试</h5><p>注：这些是公共模块，后面不再赘述</p>
 <p>读数据并给$\mathbf{x}$加上<a href="http://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-to-interpret-the-constant-y-intercept" target="_blank" rel="external">常数项(intercept term)</a>：</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">%% Load Data</span></div><div class="line">fprintf(<span class="string">'Loading data ...\n'</span>);</div><div class="line">train_data = csvread(<span class="string">'../data/save_train.csv'</span>, <span class="number">1</span>, <span class="number">1</span>);</div><div class="line">X_train = train_data(:, <span class="number">1</span>:<span class="number">384</span>);</div><div class="line">y_train = train_data(:, <span class="number">385</span>);</div><div class="line">m = <span class="built_in">length</span>(y_train);</div><div class="line"></div><div class="line"><span class="comment">% Add intercept term to X</span></div><div class="line">X_train = [ones(m, <span class="number">1</span>) X_train];</div></pre></td></tr></table></figure>
@@ -408,7 +408,7 @@
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">alpha = <span class="number">0.1</span> - <span class="number">0.001</span>;</div><div class="line">num_iters = <span class="number">500</span>;</div><div class="line">tic</div><div class="line">k = <span class="number">3</span>;</div><div class="line">cv = cvpartition(y_train, <span class="string">'Kfold'</span>, k);</div><div class="line">mse = <span class="built_in">zeros</span>(k, <span class="number">1</span>);</div><div class="line"><span class="keyword">for</span> k = <span class="number">1</span> : k</div><div class="line">    trainIdx = cv.training(k);</div><div class="line">    testIdx = cv.test(k);</div><div class="line">    theta = <span class="built_in">zeros</span>(<span class="number">385</span>, <span class="number">1</span>);</div><div class="line">    [theta, J_history] = gradientDescentMulti(X_train(trainIdx,:),...</div><div class="line">        y_train(trainIdx), theta, alpha, num_iters);</div><div class="line">     </div><div class="line">    y_hat = X_train(testIdx, :) * theta;</div><div class="line">    </div><div class="line">    mse(k) = mean((y_train(testIdx) - y_hat).^<span class="number">2</span>);</div><div class="line">    fprintf(<span class="string">'Fold %d mse: %f \n'</span>, k, mse(k));</div><div class="line"><span class="keyword">end</span></div><div class="line">toc</div><div class="line">avrg_rmse = mean(<span class="built_in">sqrt</span>(mse));</div><div class="line">fprintf(<span class="string">'avrg_rmse: %f \n'</span>, avrg_rmse);</div></pre></td></tr></table></figure>
 <h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>将梯度下降迭代的中间结果制图有助于观察收敛情况，选取合适的参数。</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% Plot</span></div><div class="line">figure;</div><div class="line">plot(<span class="number">1</span>:<span class="built_in">numel</span>(J_history), J_history, <span class="string">'-b'</span>, <span class="string">'LineWidth'</span>, <span class="number">2</span>); <span class="comment">% blue</span></div><div class="line">xlabel(<span class="string">'Number of iterations'</span>);</div><div class="line">ylabel(<span class="string">'Cost J'</span>);</div></pre></td></tr></table></figure>
-<p><img src="/images/reg-classification-kaggle/gdcost.jpg" title="图四：迭代过程图"></p>
+<p><img src="/blog/images/reg-classification-kaggle/gdcost.jpg" title="图四：迭代过程图"></p>
 <p>在迭代150次后，收敛速度开始显著下降，迭代500次所用的时间和<strong>在训练集上</strong>测试的输出为</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% ----------- Output -------------</span></div><div class="line"><span class="comment">% Elapsed time: 9.203286 seconds</span></div><div class="line"><span class="comment">% RMSE on train dataset: 8.562877</span></div></pre></td></tr></table></figure>
 <p>交叉验证的输出为：</p>
@@ -417,8 +417,8 @@
 <h3 id="正规方程-Normal-Equation"><a href="#正规方程-Normal-Equation" class="headerlink" title="正规方程(Normal Equation)"></a>正规方程(Normal Equation)</h3><blockquote>
 <p>Normal equation: Method to solve for $\theta$ analytically which minimize $J$ by<br>explicitly taking its derivatives with respect to the $\theta_j$’s, and setting them to zero.</p>
 </blockquote>
-<h4 id="算法概观-1"><a href="#算法概观-1" class="headerlink" title="算法概观"></a>算法概观</h4><p>和梯度下降不同，为了找到代价函数的最小值对应的$\theta$，正规方程法不需要进行多次迭代，而是直接计算极小值点。极小值的计算和计算代价函数上导数为0的点有关。<br><img src="/images/reg-classification-kaggle/normal-eq1.png" title="图五：正规方程Intuition, credit: Andrew Ng"></p>
-<h4 id="计算参数"><a href="#计算参数" class="headerlink" title="计算参数"></a>计算参数</h4><p>$\theta$的计算较复杂，涉及到矩阵的求导、最小二乘法修正，有兴趣的读者请参考<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part I - 2</a><br><img src="/images/reg-classification-kaggle/normal-eq2.png" title="图六：正规方程公式, credit: Andrew Ng"><br>下面提供一种简化的推导：<br>沿用图六设定的符号，<br>$$X\theta=y \quad(1)\\<br>X^TX\theta=X^Ty \quad(2)\\<br>(X^TX+\lambda I)\theta=X^Ty \quad(3)\\<br>\theta=(X^TX+\lambda I)^{-1}X^Ty \quad(4)$$<br>求$\theta$可以转化为求(1)式；(2)式的$X^TX$是$n \times n$矩阵（才可能有逆矩阵）；(3)式的$\lambda$是很小的常数，$I$是单位矩阵，两者相乘得到的矩阵加到$X^TX$上影响可忽略不计，$X^TX+\lambda I$一定有逆矩阵，保证了(4)式的正确性。有两种情况$X^TX$不可逆：</p>
+<h4 id="算法概观-1"><a href="#算法概观-1" class="headerlink" title="算法概观"></a>算法概观</h4><p>和梯度下降不同，为了找到代价函数的最小值对应的$\theta$，正规方程法不需要进行多次迭代，而是直接计算极小值点。极小值的计算和计算代价函数上导数为0的点有关。<br><img src="/blog/images/reg-classification-kaggle/normal-eq1.png" title="图五：正规方程Intuition, credit: Andrew Ng"></p>
+<h4 id="计算参数"><a href="#计算参数" class="headerlink" title="计算参数"></a>计算参数</h4><p>$\theta$的计算较复杂，涉及到矩阵的求导、最小二乘法修正，有兴趣的读者请参考<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part I - 2</a><br><img src="/blog/images/reg-classification-kaggle/normal-eq2.png" title="图六：正规方程公式, credit: Andrew Ng"><br>下面提供一种简化的推导：<br>沿用图六设定的符号，<br>$$X\theta=y \quad(1)\\<br>X^TX\theta=X^Ty \quad(2)\\<br>(X^TX+\lambda I)\theta=X^Ty \quad(3)\\<br>\theta=(X^TX+\lambda I)^{-1}X^Ty \quad(4)$$<br>求$\theta$可以转化为求(1)式；(2)式的$X^TX$是$n \times n$矩阵（才可能有逆矩阵）；(3)式的$\lambda$是很小的常数，$I$是单位矩阵，两者相乘得到的矩阵加到$X^TX$上影响可忽略不计，$X^TX+\lambda I$一定有逆矩阵，保证了(4)式的正确性。有两种情况$X^TX$不可逆：</p>
 <ol>
 <li>有重复的特征（线性相关）。</li>
 <li>特征数过多。</li>
@@ -437,7 +437,7 @@
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% ----------- Output -------------</span></div><div class="line"><span class="comment">% Elapsed time: 1.136081 seconds</span></div><div class="line"><span class="comment">% avrg_rmse: 8.325153</span></div></pre></td></tr></table></figure>
 <p>Kaggle提交的真实测试结果<code>score=8.44464</code>，可见该例中正规方程法无论是用时还是误差都优于梯度下降法</p>
 <h2 id="多层感知器-Multi-layer-Perceptron-MLP"><a href="#多层感知器-Multi-layer-Perceptron-MLP" class="headerlink" title="多层感知器(Multi-layer Perceptron, MLP)"></a>多层感知器(Multi-layer Perceptron, MLP)</h2><p>上文中使用了线性回归的方法进行拟合，效果不好，原因可能是数据量大、特征不多，线性模型的表达能力较弱。因此尝试非线性的神经网络。多层感知器是其中最简单的一种。</p>
-<h3 id="模型概观"><a href="#模型概观" class="headerlink" title="模型概观"></a>模型概观</h3><p>MLP也称为前馈人工神经网络(feedforward neural network)，网络的输入层(input layer)和输出层(output layer)之间有一或多层隐藏层(hidden layer)。前馈意为数据从输入层流向输出层(forward)。这种类型的网络用后向传播(backpropagation)学习算法进行训练的。<br><img src="/images/reg-classification-kaggle/mlp_network.png" title="图七：单隐藏层感知机, credit: Scikit learn" width="50%" style="margin: auto;"><br>最左边的层即输入层，由一组神经元(neuron)${x_i|x_1,x_2,…,x_m}$代表输入特征。隐藏层中的每个神经元的值通过将前一层中的值通过加权线性求和$w_1x_1+w_2x_2+…+w_mx_m$，再用一个非线性激活函数(non-linear activation function)$g(\cdot):R\rightarrow R$获得。输出层接收上一层的值并转换成输出值。输入输出层均可以有多个神经元。<br>可以看出多层感知器和线性回归模型最大的区别在于其通过两种方式实现的“非线性”：</p>
+<h3 id="模型概观"><a href="#模型概观" class="headerlink" title="模型概观"></a>模型概观</h3><p>MLP也称为前馈人工神经网络(feedforward neural network)，网络的输入层(input layer)和输出层(output layer)之间有一或多层隐藏层(hidden layer)。前馈意为数据从输入层流向输出层(forward)。这种类型的网络用后向传播(backpropagation)学习算法进行训练的。<br><img src="/blog/images/reg-classification-kaggle/mlp_network.png" title="图七：单隐藏层感知机, credit: Scikit learn" width="50%" style="margin: auto;"><br>最左边的层即输入层，由一组神经元(neuron)${x_i|x_1,x_2,…,x_m}$代表输入特征。隐藏层中的每个神经元的值通过将前一层中的值通过加权线性求和$w_1x_1+w_2x_2+…+w_mx_m$，再用一个非线性激活函数(non-linear activation function)$g(\cdot):R\rightarrow R$获得。输出层接收上一层的值并转换成输出值。输入输出层均可以有多个神经元。<br>可以看出多层感知器和线性回归模型最大的区别在于其通过两种方式实现的“非线性”：</p>
 <ol>
 <li>非线性激活函数</li>
 <li>多层组合</li>
@@ -467,7 +467,7 @@
 <li>设置隐藏层神经元数各层不一，分别为300、150、50、10，在<code>MAX_STEP=17000</code>时即得到了更优的：<code>score=0.91748</code>.</li>
 </ol>
 <p>可以发现，从<code>score=5.62558</code>到<code>score=0.91748</code>，一开始进步很快，后来举步维艰，已经很难再改进。神经网络迭代次数上万，在多个GPU共同训练的情况下也耗时较多。另一点是调参虽有一定的经验规律可用，但整体还是个黑箱，不容易找到较好的参数。听闻神经网络法在某种繁复的设置下（如采用类似VGG的结构）还是可以达到<code>score~=0.24</code>的，读者有兴趣可进行尝试。</p>
-<h2 id="最近邻之scikit-learn"><a href="#最近邻之scikit-learn" class="headerlink" title="最近邻之scikit-learn"></a>最近邻之scikit-learn</h2><p>经试验，MLP虽然远优于线性回归，但是也难以获得<code>score&lt;0.5</code>，回头尝试其他传统回归方法。机器学习库scikit-learn已经造了大量轮子，下面介绍用scikit-learn中的<a href="https://scikit-learn.org/stable/modules/neighbors.html" target="_blank" rel="external">最近邻</a>算法及一个trick获得<code>score=0.24633</code>，其他<a href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning" target="_blank" rel="external">回归方法</a>亦可照葫芦画瓢。<br><img src="/images/reg-classification-kaggle/scikit-learn-algorithm.png" title="图八：scikit-learn算法选择, credit: scikit learn" style="margin: auto;"></p>
+<h2 id="最近邻之scikit-learn"><a href="#最近邻之scikit-learn" class="headerlink" title="最近邻之scikit-learn"></a>最近邻之scikit-learn</h2><p>经试验，MLP虽然远优于线性回归，但是也难以获得<code>score&lt;0.5</code>，回头尝试其他传统回归方法。机器学习库scikit-learn已经造了大量轮子，下面介绍用scikit-learn中的<a href="https://scikit-learn.org/stable/modules/neighbors.html" target="_blank" rel="external">最近邻</a>算法及一个trick获得<code>score=0.24633</code>，其他<a href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning" target="_blank" rel="external">回归方法</a>亦可照葫芦画瓢。<br><img src="/blog/images/reg-classification-kaggle/scikit-learn-algorithm.png" title="图八：scikit-learn算法选择, credit: scikit learn" style="margin: auto;"></p>
 <h3 id="KNN概览"><a href="#KNN概览" class="headerlink" title="KNN概览"></a>KNN概览</h3><p>最近邻算法是一种非常直观朴素的算法，对于回归任务，预测一个样本时从特征空间中选择距离该样本最近（最相似）的k个标注样本，该样本的预测值为这些邻居的平均值。如果是分类任务，则预测为大多数邻居所属的类别。<br>如果采用暴力搜索来找邻居，大数据量下将非常耗时，因此常用一些快速索引结构如Ball Tree或KD Tree。在scikit-learn中只需改<code>algorithm</code>参数即可。<br>另外“近”可以由不同的标准定义，如欧氏距离、曼哈顿距离；对于不同相近程度的邻居也可以赋予不同的权重或者一视同仁。更多的参数，可参看<a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html#sklearn.neighbors.KNeighborsRegressor" target="_blank" rel="external">sklearn.neighbors.KNeighborsRegressor文档</a></p>
 <h3 id="用scikit-learn实现"><a href="#用scikit-learn实现" class="headerlink" title="用scikit-learn实现"></a>用scikit-learn实现</h3><p>可参考<a href="https://scikit-learn.org/stable/auto_examples/neighbors/plot_regression.html#sphx-glr-auto-examples-neighbors-plot-regression-py" target="_blank" rel="external">Nearest Neighbors regression Example</a>(Python语言），下面为主程序代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    <span class="comment"># Step 1: Read data</span></div><div class="line">    train_data_batch, train_label_batch = train_batch_generator([TRAIN_PATH])</div><div class="line">    train_features, train_labels = \</div><div class="line">        train_generate_batches(train_data_batch, train_label_batch)</div><div class="line"></div><div class="line">    test_data_batch = test_batch_generator([TEST_PATH])</div><div class="line">    test_features = test_generate_batches(test_data_batch)</div><div class="line">    </div><div class="line">    <span class="comment"># Step 2: Define model</span></div><div class="line">    KNN = neighbors.KNeighborsRegressor(n_neighbors=<span class="number">1</span>)</div><div class="line"></div><div class="line">    <span class="comment"># Step 3: Fit the model and predict</span></div><div class="line">    test_labels = knn.fit(train_features, train_labels).predict(test_features)</div><div class="line">    </div><div class="line">    <span class="comment"># Step 4: Write file</span></div><div class="line">    <span class="keyword">with</span> open(<span class="string">'res_nn.csv'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> fw:</div><div class="line">        csv_w = csv.writer(fw)</div><div class="line">        csv_w.writerow([<span class="string">'Id'</span>, <span class="string">'reference'</span>])</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(BATCH_SIZE):</div><div class="line">            csv_w.writerow([i, test_labels[i][<span class="number">0</span>]])</div></pre></td></tr></table></figure>
@@ -498,8 +498,8 @@
 </table>
 <p>这种方法确实有偶然性，但也是有依据的：赋予不同距离的邻居不同的权重。设最近的邻居为$f$，第二近的邻居为$s$，由于前面采用的是默认的<code>weights=&#39;uniform&#39;</code>即全部邻居全部相同权重，可以看做$2nn=(f+s)*0.5$，因此下面这个例子可以拆分成<br>$$0.6*nn+0.4*2nn=0.6*(f)+0.4*(f+s)*0.5=0.8*f+0.2*s$$ 也就是以4:1的权重来对待$f$和$s$，相当于自定义了<code>weights</code>.</p>
 <p>其实，这种方法可视为<strong>ensembling</strong>方法中最简单的一种，具体请参考<a href="https://mlwave.com/kaggle-ensembling-guide/" target="_blank" rel="external">KAGGLE ENSEMBLING GUIDE</a>。</p>
-<h2 id="各回归方法对比"><a href="#各回归方法对比" class="headerlink" title="各回归方法对比"></a>各回归方法对比</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/regression-score.gif" alt=""></div></div><div class="group-picture-row"></div></div></div>
-<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/regression-time.gif" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<h2 id="各回归方法对比"><a href="#各回归方法对比" class="headerlink" title="各回归方法对比"></a>各回归方法对比</h2><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/regression-score.gif" alt=""></div></div><div class="group-picture-row"></div></div></div>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/regression-time.gif" alt=""></div></div><div class="group-picture-row"></div></div></div>
 <p><strong>结论：</strong>线性回归方法误差过高，淘汰；KNN又快又准，胜出；神经网络再接再厉，兴可推前浪。</p>
 <h1 id="分类-Classification"><a href="#分类-Classification" class="headerlink" title="分类(Classification)"></a>分类(Classification)</h1><blockquote>
 <p>Identifying to which <strong>category</strong> (discrete labels) an object belongs to.</p>
@@ -510,7 +510,7 @@
 <h2 id="度量标准-Evaluation-1"><a href="#度量标准-Evaluation-1" class="headerlink" title="度量标准(Evaluation)"></a>度量标准(Evaluation)</h2><p>AUC(Area under Receiver Operating Characteristic Curve)[binary-classification]<br>越大越好</p>
 <h2 id="逻辑回归-Logistic-Regression"><a href="#逻辑回归-Logistic-Regression" class="headerlink" title="逻辑回归(Logistic Regression)"></a>逻辑回归(Logistic Regression)</h2><p>推荐阅读：<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part II</a></p>
 <p>逻辑“回归”是用于<strong>分类</strong>任务而非回归任务的。</p>
-<h3 id="Hypothesis-Representation"><a href="#Hypothesis-Representation" class="headerlink" title="Hypothesis Representation"></a>Hypothesis Representation</h3><p>联想一开头讨论的线性回归算法，求解分类问题可以先忽视$y$是离散值，而套用线性回归算法给定$x$预测$y$.此思路最大的问题在于预测的连续值大于1或小于0时都无意义，因为$y\in \{0,1\}$.然而，通过<strong>逻辑函数(logistic function)</strong>（或<strong>sigmoid函数</strong>），可以将范围限制在0和1之间：<br>$$h_{\theta}(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}},\\<br>where \quad g(z)=\frac{1}{1+e^{-z}},\\<br>\theta^Tx=\theta_0+\sum_{ j = 1 }^{ n } \theta_jx_j$$<br><img src="/images/reg-classification-kaggle/sigmoid.png" title="图九：逻辑函数/sigmoid函数, credit: Andrew Ng" style="margin:auto;"><br>其他能将值平滑映射为从0增加到1的函数也可，sigmoid函数直观简单，它的导数也有着很好的形式：<br>$$<br>\begin{eqnarray}<br>g’(z) &amp;=&amp; \frac{d}{dz} \frac{1}{1+e^{-z}}\\<br>      &amp;=&amp; \frac{1}{(1+e^{-z})^2}(e^{-z})\\<br>      &amp;=&amp; \frac{1}{(1+e^{-z})} \cdot (1-\frac{1}{(1+e^{-z})})\\<br>      &amp;=&amp; g(z)(1-g(z))<br>\end{eqnarray}<br>$$</p>
+<h3 id="Hypothesis-Representation"><a href="#Hypothesis-Representation" class="headerlink" title="Hypothesis Representation"></a>Hypothesis Representation</h3><p>联想一开头讨论的线性回归算法，求解分类问题可以先忽视$y$是离散值，而套用线性回归算法给定$x$预测$y$.此思路最大的问题在于预测的连续值大于1或小于0时都无意义，因为$y\in \{0,1\}$.然而，通过<strong>逻辑函数(logistic function)</strong>（或<strong>sigmoid函数</strong>），可以将范围限制在0和1之间：<br>$$h_{\theta}(x)=g(\theta^Tx)=\frac{1}{1+e^{-\theta^Tx}},\\<br>where \quad g(z)=\frac{1}{1+e^{-z}},\\<br>\theta^Tx=\theta_0+\sum_{ j = 1 }^{ n } \theta_jx_j$$<br><img src="/blog/images/reg-classification-kaggle/sigmoid.png" title="图九：逻辑函数/sigmoid函数, credit: Andrew Ng" style="margin:auto;"><br>其他能将值平滑映射为从0增加到1的函数也可，sigmoid函数直观简单，它的导数也有着很好的形式：<br>$$<br>\begin{eqnarray}<br>g’(z) &amp;=&amp; \frac{d}{dz} \frac{1}{1+e^{-z}}\\<br>      &amp;=&amp; \frac{1}{(1+e^{-z})^2}(e^{-z})\\<br>      &amp;=&amp; \frac{1}{(1+e^{-z})} \cdot (1-\frac{1}{(1+e^{-z})})\\<br>      &amp;=&amp; g(z)(1-g(z))<br>\end{eqnarray}<br>$$</p>
 <h3 id="梯度上升法"><a href="#梯度上升法" class="headerlink" title="梯度上升法"></a>梯度上升法</h3><h4 id="Likelihood-of-the-Parameters"><a href="#Likelihood-of-the-Parameters" class="headerlink" title="Likelihood of the Parameters"></a>Likelihood of the Parameters</h4><p>假设<br>$$\begin{eqnarray}<br>P(y=1|x;\theta)&amp;=&amp;h_{\theta}(x)\\<br>P(y=0|x;\theta)&amp;=&amp;1-h_{\theta}(x)<br>\end{eqnarray}$$</p>
 <p>$P$是概率/可能性(likelihood)，我们的目标是<strong>最大化</strong>$P$。因为假设在$P$最大的边界情况下$P=1$，根据假设：</p>
 <ul>
@@ -518,28 +518,28 @@
 <li>当一个样本的真实标签$y=0$时，这个样本的预测值$h_{\theta}(x)=0$，预测正确。</li>
 </ul>
 <p>接下来皆使用一个更简洁的式子来代替上面两个式子的表示：<br>$$P(y|x;\theta)=(h_{\theta}(x))^y(1-h_{\theta}(x))^{1-y}$$</p>
-<p>假设m个训练样本各自独立生成，从而可以统一表示所有参数的这种可能性(the likelihood of the parameters)：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/L_theta.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
+<p>假设m个训练样本各自独立生成，从而可以统一表示所有参数的这种可能性(the likelihood of the parameters)：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/L_theta.png" alt=""></div></div><div class="group-picture-row"></div></div></div></p>
 <h4 id="Maximize-the-Likelihood-Gradient-Ascent"><a href="#Maximize-the-Likelihood-Gradient-Ascent" class="headerlink" title="Maximize the Likelihood (Gradient Ascent)"></a>Maximize the Likelihood (Gradient Ascent)</h4><p>首先对$L(\theta)$做对数运算，这样有利于求最大值<br>$$\begin{eqnarray}<br>l(\theta) &amp;=&amp; \log L(\theta)\\<br>&amp;=&amp; \sum_{i=1}^{m} y^{(i)}\log h(x^{(i)})+(1-y^{(i)})\log (1-h(x^{(i)}))<br>\end{eqnarray}$$</p>
 <p>和线性回归的求解思路（梯度上升法）相似，下面采用<strong>梯度上升法</strong>来最大化(likelihood)函数，更新规则如下：<br>$$\theta:=\theta+\alpha {\nabla}_{\theta} l(\theta)$$<br>(用<strong>正号</strong>而非符号是因为此时我们需要<strong>最大化</strong>而非最小化函数，更多相关解释，可回到上文的<a href="#meaning-of-descent">梯度“上升”的含义</a>)</p>
-<p>以<em>一个样本</em>$(x,y)$为例展开求导（利用了前面推导的sigmoid函数的导数$g’(z)=g(z)(1-g(z))$和$(lnx)’=1/x$）：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/derivative-gradient-ascent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>求得<em>随机</em>梯度上升规则<br>$$\theta_j:=\theta_j+\alpha (y^{(i)}-h_{\theta}(x^{(i)})) x_j^{(i)}$$</p>
-<p>上式看起来和<strong>线性回归的</strong>求解方法随机梯度下降（和梯度下降的不同是每次更新是随机选<strong>一个</strong>样本而非全部样本）的更新规则<strong>看起来</strong>完全一样：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/stochastic-gradient-descent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>但它们不是同一个算法，因为在随机梯度上升规则中的$h_{\theta}(x^{(i)})$是$\theta^Tx^{(i)}$的<strong>非线性</strong>函数，而线性回归中的是线性的。<br>尽管如此，两者形式上的相同并不是巧合，它们有更深层次的联系（Generalized Linear Models），感兴趣的读者可阅读<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part III</a>.</p>
-<h3 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h3><p>上文所讨论的梯度上升法针对的是最大化$l(\theta)$，是正式完整的逻辑回归求解过程。下面讨论梯度下降法，针对<strong>最小化代价函数</strong>。两者实质是一样的，或者说，梯度下降法优化的代价函数的表示可以（可能就是）从$l(\theta)$得来的。<br>算法如下：<br><img src="/images/reg-classification-kaggle/logistic-regression-gradient-descent.png" title="图十：逻辑回归的梯度下降法, modify from: Andrew Ng" style="margin:auto;"><br>$J(\theta)$表示代价函数，它在上文推导出的$l(\theta)$基础上乘一个负数$-\frac{1}{m}$将原来最大化的问题转化为最小化，这种转化是因为我们总是最小化代价函数（代价小）。在此基础上可以求导、迭代等，和线性回归中梯度下降的过程类似。</p>
+<p>以<em>一个样本</em>$(x,y)$为例展开求导（利用了前面推导的sigmoid函数的导数$g’(z)=g(z)(1-g(z))$和$(lnx)’=1/x$）：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/derivative-gradient-ascent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>求得<em>随机</em>梯度上升规则<br>$$\theta_j:=\theta_j+\alpha (y^{(i)}-h_{\theta}(x^{(i)})) x_j^{(i)}$$</p>
+<p>上式看起来和<strong>线性回归的</strong>求解方法随机梯度下降（和梯度下降的不同是每次更新是随机选<strong>一个</strong>样本而非全部样本）的更新规则<strong>看起来</strong>完全一样：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/stochastic-gradient-descent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>但它们不是同一个算法，因为在随机梯度上升规则中的$h_{\theta}(x^{(i)})$是$\theta^Tx^{(i)}$的<strong>非线性</strong>函数，而线性回归中的是线性的。<br>尽管如此，两者形式上的相同并不是巧合，它们有更深层次的联系（Generalized Linear Models），感兴趣的读者可阅读<a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf" target="_blank" rel="external">CS229 Lecture notes1 Part III</a>.</p>
+<h3 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h3><p>上文所讨论的梯度上升法针对的是最大化$l(\theta)$，是正式完整的逻辑回归求解过程。下面讨论梯度下降法，针对<strong>最小化代价函数</strong>。两者实质是一样的，或者说，梯度下降法优化的代价函数的表示可以（可能就是）从$l(\theta)$得来的。<br>算法如下：<br><img src="/blog/images/reg-classification-kaggle/logistic-regression-gradient-descent.png" title="图十：逻辑回归的梯度下降法, modify from: Andrew Ng" style="margin:auto;"><br>$J(\theta)$表示代价函数，它在上文推导出的$l(\theta)$基础上乘一个负数$-\frac{1}{m}$将原来最大化的问题转化为最小化，这种转化是因为我们总是最小化代价函数（代价小）。在此基础上可以求导、迭代等，和线性回归中梯度下降的过程类似。</p>
 <h3 id="梯度法分类及实现"><a href="#梯度法分类及实现" class="headerlink" title="梯度法分类及实现"></a>梯度法分类及实现</h3><p>下面以逻辑回归的梯度上升法为例，用Python语言分别实现批量梯度上升、随机梯度上升、小批量梯度上升法及批量梯度上升法的多进程并行化。<br>前文已经讨论过，逻辑回归的梯度上升法和梯度下降法实质是一样的，具体来说，下面代码（梯度上升）中的：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">error = labelMat[i] - sigmoid(predict(weights, data))</div><div class="line"><span class="keyword">for</span> d <span class="keyword">in</span> data:</div><div class="line">    _weights[d] = _weights[d] + alpha*error*data[d]</div></pre></td></tr></table></figure>
 <p>两行各换个符号便是梯度下降法了，实际相同：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">error = sigmoid(predict(t_weights, data)) - labelMat[i]</div><div class="line"><span class="keyword">for</span> d <span class="keyword">in</span> data:</div><div class="line">    _weights[d] = _weights[d] - alpha*error*data[d]</div></pre></td></tr></table></figure>
 <h4 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h4><ul>
-<li>使用梯度法需要将数据进行特征缩放(feature scaling)！经测试，该步骤非常必要。后面的实现测试中，若未进行特征缩放，准确率总是为45%（比瞎猜还差），进行特征缩放后，第一次迭代的准确率即可超过50%.<br><img src="/images/reg-classification-kaggle/feature-scaling.png" title="图11：特征缩放, credit: Andrew Ng"><br>特征缩放作用的简化直观理解可参见上图。<br>本例中我使用了$\frac{x-min}{max-min}$对每个特征的值(x)进行处理，min和max分别是最小值和最大值。<br>值得注意的是，训练集和测试集都需要进行同样尺度的特征缩放。具体做法是先找到训练集的min,max，对训练集和测试集都用这个min,max缩放。</li>
+<li>使用梯度法需要将数据进行特征缩放(feature scaling)！经测试，该步骤非常必要。后面的实现测试中，若未进行特征缩放，准确率总是为45%（比瞎猜还差），进行特征缩放后，第一次迭代的准确率即可超过50%.<br><img src="/blog/images/reg-classification-kaggle/feature-scaling.png" title="图11：特征缩放, credit: Andrew Ng"><br>特征缩放作用的简化直观理解可参见上图。<br>本例中我使用了$\frac{x-min}{max-min}$对每个特征的值(x)进行处理，min和max分别是最小值和最大值。<br>值得注意的是，训练集和测试集都需要进行同样尺度的特征缩放。具体做法是先找到训练集的min,max，对训练集和测试集都用这个min,max缩放。</li>
 <li>该例中的数据有一些异常：训练集的特征的index范围有1-201，测试集只有1-132.因此可预处理将训练集特征的index大于133的去除</li>
 <li>训练集/测试集的样本从某一行开始重复（具体忘了，若要用此数据，可除重）</li>
 </ul>
-<h4 id="批量梯度上升法-Batch-Gradient-Ascent"><a href="#批量梯度上升法-Batch-Gradient-Ascent" class="headerlink" title="批量梯度上升法(Batch Gradient Ascent)"></a>批量梯度上升法(Batch Gradient Ascent)</h4><p>前面我们讨论的公式几乎都是批量梯度上升法，每采取一步更新都需要遍历<strong>全部训练集样本</strong>。当样本数较大时，成本较高。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/LMS-rule.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>实现时要注意：</p>
+<h4 id="批量梯度上升法-Batch-Gradient-Ascent"><a href="#批量梯度上升法-Batch-Gradient-Ascent" class="headerlink" title="批量梯度上升法(Batch Gradient Ascent)"></a>批量梯度上升法(Batch Gradient Ascent)</h4><p>前面我们讨论的公式几乎都是批量梯度上升法，每采取一步更新都需要遍历<strong>全部训练集样本</strong>。当样本数较大时，成本较高。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/LMS-rule.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>实现时要注意：</p>
 <ul>
 <li>权重（参数$\theta$）随机初始化的效果优于固定值初始化</li>
 <li>在每次迭代要同步更新权重，因此需要先拷贝原权重用于该次迭代所有需更新的权重的计算，以免先计算的某个权重被用于其他权重的计算导致其他权重的计算是“后更新”的。（绕，看代码）</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">batchGradAscent</span><span class="params">(dataMat, labelMat, valDataMat, valLabelMat, numIter = N_ITER)</span>:</span></div><div class="line">    alpha = ALPHA</div><div class="line">    weights = [random.random() <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>)] <span class="comment"># random init</span></div><div class="line">    totalTime = <span class="number">0.0</span></div><div class="line">    <span class="keyword">for</span> iter <span class="keyword">in</span> range(numIter):</div><div class="line">        start = time.time()</div><div class="line">        _weights = [weights[i] <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>)] <span class="comment"># copy</span></div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(dataMat)):</div><div class="line">            dataDict = parseData(dataMat[i])</div><div class="line">            error = labelMat[i] - sigmoid(predict(weights, dataDict))</div><div class="line">            <span class="keyword">for</span> index <span class="keyword">in</span> dataDict:</div><div class="line">                _weights[index] = _weights[index] + alpha*error*dataDict[index]</div><div class="line">        weights = [_weights[i] <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>)] <span class="comment"># update</span></div><div class="line">        end = time.time()</div><div class="line">        totalTime = totalTime + float(end - start)</div><div class="line">        calcAcc(weights, valDataMat, valLabelMat, iter)</div><div class="line">    <span class="keyword">print</span> <span class="string">'batchGradAscent iter cost:'</span>, float(totalTime) / numIter, <span class="string">'s in average.'</span></div><div class="line">    <span class="keyword">return</span> weights</div></pre></td></tr></table></figure>
-<h4 id="随机梯度上升法-Stochastic-Gradient-Ascent"><a href="#随机梯度上升法-Stochastic-Gradient-Ascent" class="headerlink" title="随机梯度上升法(Stochastic Gradient Ascent)"></a>随机梯度上升法(Stochastic Gradient Ascent)</h4><p>随机梯度上升法重复遍历训练集，每次遇到一个训练样本，都只根据和这<strong>一个训练样本</strong>相关的误差梯度(the gradient of the error)来更新参数。在训练集样本多的情况下，这种方法大大减小了计算成本，加快了收敛速度（但有可能永远收敛不到最小值而是一直在最小值周围震荡）。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/images/reg-classification-kaggle/stochastic-gradient-descent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>实现时要注意：</p>
+<h4 id="随机梯度上升法-Stochastic-Gradient-Ascent"><a href="#随机梯度上升法-Stochastic-Gradient-Ascent" class="headerlink" title="随机梯度上升法(Stochastic Gradient Ascent)"></a>随机梯度上升法(Stochastic Gradient Ascent)</h4><p>随机梯度上升法重复遍历训练集，每次遇到一个训练样本，都只根据和这<strong>一个训练样本</strong>相关的误差梯度(the gradient of the error)来更新参数。在训练集样本多的情况下，这种方法大大减小了计算成本，加快了收敛速度（但有可能永远收敛不到最小值而是一直在最小值周围震荡）。<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/blog/images/reg-classification-kaggle/stochastic-gradient-descent.png" alt=""></div></div><div class="group-picture-row"></div></div></div><br>实现时要注意：</p>
 <ul>
 <li>该实现随机选取一个样本</li>
 <li>该实现每次迭代随机采样的次数等于训练样本数（即公式中的m），这样在每次迭代中可随到大多数样本，样本丰富性高。如需加速，可减小采样数。</li>
@@ -580,7 +580,7 @@
 <li>更新共享变量前需加锁：<code>with lock</code></li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">calcGrad</span><span class="params">(_weights, alpha, dataMat, labelMat, lock)</span>:</span></div><div class="line">    t_weights = [_weights[i] <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>)]</div><div class="line">    sums = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>)]</div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(dataMat)):</div><div class="line">        data = parseData(dataMat[i])</div><div class="line">        error = labelMat[i] - sigmoid(predict(t_weights, data))</div><div class="line">        <span class="keyword">for</span> d <span class="keyword">in</span> data:</div><div class="line">            sums[d] = sums[d] + alpha*error*data[d]</div><div class="line">    <span class="keyword">with</span> lock:</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(N_FEATURE + <span class="number">1</span>):</div><div class="line">            _weights[i] += sums[i]</div></pre></td></tr></table></figure>
-<h4 id="并行效果"><a href="#并行效果" class="headerlink" title="并行效果"></a>并行效果</h4><p><img src="/images/reg-classification-kaggle/multiprocess-parallel-time.gif" title="图12：批量梯度上升法多进程并行化时间" width="70%" style="margin:auto;"></p>
+<h4 id="并行效果"><a href="#并行效果" class="headerlink" title="并行效果"></a>并行效果</h4><p><img src="/blog/images/reg-classification-kaggle/multiprocess-parallel-time.gif" title="图12：批量梯度上升法多进程并行化时间" width="70%" style="margin:auto;"></p>
 <p><strong>现象</strong>：</p>
 <ol>
 <li>进程数从1以两倍的关系递增到16的过程中用时基本呈<strong>减半</strong>关系下降</li>
@@ -595,14 +595,14 @@
 </ol>
 <p><em>并行化和其他非并行化方法的对比，请见下文</em></p>
 <h3 id="结果及比较"><a href="#结果及比较" class="headerlink" title="结果及比较"></a>结果及比较</h3><h4 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h4><p>使用逻辑回归之梯度上升法训练约50次（$\alpha=0.01）便难以再提升，预测出的label在0.5上下，因此直接四舍五入成0和1，提交结果<code>score =  0.72512</code>.后面将介绍的XGBoost的效果大幅(<code>score &gt;  0.9</code>)超越逻辑回归，因此不再继续对逻辑回归调参，仅作为一个方法比较。</p>
-<h4 id="准确率比较"><a href="#准确率比较" class="headerlink" title="准确率比较"></a>准确率比较</h4><p><img src="/images/reg-classification-kaggle/logistic-regression-gradient-ascent-acc.gif" title="图13：逻辑回归之梯度上升法准确率" width="70%" style="margin:auto;"><br>上图是设$\alpha=0.1$设各方法迭代两次统计的准确率，准确率的计算方法是预测值大于等于0且标签为1或预测值小于0且标签为0时预测正确。该学习率设置得较大是为了使在两次迭代（节省运行时间）情况下就可以看出准确率的变化。<br>测试结果在一定程度上表现了</p>
+<h4 id="准确率比较"><a href="#准确率比较" class="headerlink" title="准确率比较"></a>准确率比较</h4><p><img src="/blog/images/reg-classification-kaggle/logistic-regression-gradient-ascent-acc.gif" title="图13：逻辑回归之梯度上升法准确率" width="70%" style="margin:auto;"><br>上图是设$\alpha=0.1$设各方法迭代两次统计的准确率，准确率的计算方法是预测值大于等于0且标签为1或预测值小于0且标签为0时预测正确。该学习率设置得较大是为了使在两次迭代（节省运行时间）情况下就可以看出准确率的变化。<br>测试结果在一定程度上表现了</p>
 <ul>
 <li>并行化和非并行化版本的结果一致，说明实现过程是正确的。</li>
 <li>随机梯度上升法和小批量梯度上升法均在第一次迭代就获得了较批量梯度上升法高许多的准确率，说明前者较后者“前进步伐”更大。</li>
 <li>随机梯度上升法和小批量梯度上升法第二次迭代的准确率较第一次几乎没有变化，这（可能）是因为学习率过大，导致在极小值附近“震荡”。</li>
 <li>批量梯度上升法在第二次迭代取得了长足的进步。</li>
 </ul>
-<h4 id="用时比较"><a href="#用时比较" class="headerlink" title="用时比较"></a>用时比较</h4><p><img src="/images/reg-classification-kaggle/logistic-regression-gradient-ascent-time.gif" title="图14：逻辑回归之梯度上升法耗时" width="70%" style="margin:auto;"><br>上图是四种方法单次迭代（由两次迭代用时平均得来）所用时间的比较。注意计时时不考虑测试准确率的用时（因为未对这个操作进行并行化，计入会影响并行化时间比较），但考虑了除此之外单次迭代中所用到的各种操作，包括复制权重、并行化的进程相关操作等。<br>测试结果在一定程度上表现了</p>
+<h4 id="用时比较"><a href="#用时比较" class="headerlink" title="用时比较"></a>用时比较</h4><p><img src="/blog/images/reg-classification-kaggle/logistic-regression-gradient-ascent-time.gif" title="图14：逻辑回归之梯度上升法耗时" width="70%" style="margin:auto;"><br>上图是四种方法单次迭代（由两次迭代用时平均得来）所用时间的比较。注意计时时不考虑测试准确率的用时（因为未对这个操作进行并行化，计入会影响并行化时间比较），但考虑了除此之外单次迭代中所用到的各种操作，包括复制权重、并行化的进程相关操作等。<br>测试结果在一定程度上表现了</p>
 <ul>
 <li>16进程并行化的批量梯度上升法无疑是最快速的，但未达到16倍的加速（约11倍），这与多进程需要额外的操作有关（如等待各子进程完成梯度计算才能更新权重）。</li>
 <li>根据前面非并行化三种方法的实现可知，这三种方法都用了同样多次数的循环操作（迭代次数*总训练样本数），最终三者时间上仍有一定差异。</li>
@@ -676,7 +676,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/10/try-docker/" rel="next" title="[Web] Try Docker">
+              <a href="/blog/2017/06/10/try-docker/" rel="next" title="[Web] Try Docker">
                 <i class="fa fa-chevron-left"></i> [Web] Try Docker
               </a>
             
@@ -686,7 +686,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/10/handwritten-digits-recognition/" rel="prev" title="[CVPR] 手写体数字识别">
+              <a href="/blog/2017/07/10/handwritten-digits-recognition/" rel="prev" title="[CVPR] 手写体数字识别">
                 [CVPR] 手写体数字识别 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -755,7 +755,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/blog/images/avatar.png"
                alt="HYPJUDY" />
           <p class="site-author-name" itemprop="name">HYPJUDY</p>
            
@@ -766,7 +766,7 @@
         
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
+              <a href="/blog/archives">
                 <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -897,46 +897,46 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
